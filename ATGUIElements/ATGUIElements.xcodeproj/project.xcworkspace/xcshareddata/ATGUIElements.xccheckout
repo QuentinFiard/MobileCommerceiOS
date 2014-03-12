@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>1549EA17-20C0-4825-8EE0-A7E20C79D040</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ATGUIElements</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2DA1AC04-073A-4C8A-83FD-85E3E021B059</key>
+		<string>https://github.com/QuentinFiard/MobileCommerceiOS</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ATGUIElements/ATGUIElements.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2DA1AC04-073A-4C8A-83FD-85E3E021B059</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/QuentinFiard/MobileCommerceiOS</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2DA1AC04-073A-4C8A-83FD-85E3E021B059</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2DA1AC04-073A-4C8A-83FD-85E3E021B059</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MobileCommerceiOS</string>
+		</dict>
+	</array>
+</dict>
+</plist>
