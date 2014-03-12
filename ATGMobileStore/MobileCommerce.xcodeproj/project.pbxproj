@@ -1782,7 +1782,7 @@
 				ORGANIZATIONNAME = Oracle;
 				TargetAttributes = {
 					10F562E717FC8F960084FCDD = {
-						TestTargetID = 77626A9313CC8AA00030AD0B /* ATGMobileCommerce */;
+						TestTargetID = 77626A9313CC8AA00030AD0B;
 					};
 				};
 			};
@@ -2341,6 +2341,7 @@
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(BUILD_ROOT)/../IntermediateBuildFilesPath/UninstalledProducts/** $(BUILT_PRODUCTS_DIR)/**";
+				VALID_ARCHS = "arm64 armv7 armv7s i386";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -2366,6 +2367,7 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(BUILD_ROOT)/../IntermediateBuildFilesPath/UninstalledProducts/** $(BUILT_PRODUCTS_DIR)/**";
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s i386";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
