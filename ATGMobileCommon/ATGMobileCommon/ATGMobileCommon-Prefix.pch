@@ -1,0 +1,17 @@
+//
+// Prefix header for all source files of the 'ATGMobileCommon' target in the 'ATGMobileCommon' project
+//
+
+#ifdef __OBJC__
+  #import <Foundation/Foundation.h>
+  #import <CoreData/CoreData.h>
+  #import <UIKit/UIKit.h>
+  #import "NSObject+ATGRestAdditions.h"
+  #import "NSManagedObject+ATGRestAdditions.h"
+#endif
+
+#ifdef ATG_DEBUG_MODE
+#define DebugLog( s, ... ) NSLog( @"<%p %@:(%d)> %@", self, [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
+#else
+#define DebugLog( s, ... )
+#endif

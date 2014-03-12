@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		062CB115165E5CC60044FC5D /* ATGThemeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 062CB10D165E5CC60044FC5D /* ATGThemeManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		062CB116165E5CC60044FC5D /* ATGThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 062CB10E165E5CC60044FC5D /* ATGThemeManager.m */; };
+		062CB117165E5CC60044FC5D /* ATGThemeReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 062CB10F165E5CC60044FC5D /* ATGThemeReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		062CB118165E5CC60044FC5D /* ATGThemeReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 062CB110165E5CC60044FC5D /* ATGThemeReader.m */; };
+		062CB11B165E5CC60044FC5D /* UIView+ATGThemeAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 062CB113165E5CC60044FC5D /* UIView+ATGThemeAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		062CB11C165E5CC60044FC5D /* UIView+ATGThemeAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 062CB114165E5CC60044FC5D /* UIView+ATGThemeAdditions.m */; };
+		062D7F2E15F7A327000B1B66 /* ATGSerializable.h in Headers */ = {isa = PBXBuildFile; fileRef = 062D7F2D15F7A327000B1B66 /* ATGSerializable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		713BB5C416CD717E007F5151 /* ATGCustomJSONPathManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 713BB5C016CD717E007F5151 /* ATGCustomJSONPathManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		713BB5C516CD717E007F5151 /* ATGCustomJSONPathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 713BB5C116CD717E007F5151 /* ATGCustomJSONPathManager.m */; };
+		713BB5C616CD717E007F5151 /* ATGCustomJSONPathRegex.h in Headers */ = {isa = PBXBuildFile; fileRef = 713BB5C216CD717E007F5151 /* ATGCustomJSONPathRegex.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		713BB5C716CD717E007F5151 /* ATGCustomJSONPathRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = 713BB5C316CD717E007F5151 /* ATGCustomJSONPathRegex.m */; };
+		713BB5EA16CD8E45007F5151 /* ATGDefaultJSONPathRegex.h in Headers */ = {isa = PBXBuildFile; fileRef = 713BB5E116CD8E45007F5151 /* ATGDefaultJSONPathRegex.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		713BB5EB16CD8E45007F5151 /* ATGDefaultJSONPathRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = 713BB5E216CD8E45007F5151 /* ATGDefaultJSONPathRegex.m */; };
+		713BB5EC16CD8E45007F5151 /* ATGJSONPathManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 713BB5E316CD8E45007F5151 /* ATGJSONPathManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		713BB5ED16CD8E45007F5151 /* ATGJSONPathManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 713BB5E416CD8E45007F5151 /* ATGJSONPathManager.m */; };
+		713BB5EE16CD8E45007F5151 /* ATGJSONPathParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 713BB5E516CD8E45007F5151 /* ATGJSONPathParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		713BB5EF16CD8E45007F5151 /* ATGJSONPathParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 713BB5E616CD8E45007F5151 /* ATGJSONPathParser.m */; };
+		713BB5F016CD8E45007F5151 /* ATGJSONPathParserDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 713BB5E716CD8E45007F5151 /* ATGJSONPathParserDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		713BB5F116CD8E45007F5151 /* ATGJSONPathTokenizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 713BB5E816CD8E45007F5151 /* ATGJSONPathTokenizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		713BB5F216CD8E45007F5151 /* ATGJSONPathTokenizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 713BB5E916CD8E45007F5151 /* ATGJSONPathTokenizer.m */; };
+		716B06BB16FB882900D01DF2 /* ATGCustomJSONPathParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 716B06B916FB882800D01DF2 /* ATGCustomJSONPathParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		716B06BC16FB882900D01DF2 /* ATGCustomJSONPathParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 716B06BA16FB882900D01DF2 /* ATGCustomJSONPathParser.m */; };
+		771D4F1A15D9AD1400273C4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 771D4F1915D9AD1400273C4E /* Foundation.framework */; };
+		7727DD5B16CD9C6F00FDCF78 /* ATGPhotoManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 7727DD5A16CD9C6F00FDCF78 /* ATGPhotoManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		775BEE87168CD7E900F52398 /* NSObject+ATGAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 775BEE85168CD7E800F52398 /* NSObject+ATGAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		775BEE88168CD7E900F52398 /* NSObject+ATGAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 775BEE86168CD7E900F52398 /* NSObject+ATGAdditions.m */; };
+		77F149EC15E2920500134120 /* ATGCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 77F149E315E2920500134120 /* ATGCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		77F149ED15E2920500134120 /* ATGCacheManagedDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 77F149E415E2920500134120 /* ATGCacheManagedDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		77F149EE15E2920500134120 /* ATGCacheManagedDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F149E515E2920500134120 /* ATGCacheManagedDocument.m */; };
+		77F149EF15E2920500134120 /* ATGCoreDataCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 77F149E615E2920500134120 /* ATGCoreDataCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		77F149F015E2920500134120 /* ATGCoreDataCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F149E715E2920500134120 /* ATGCoreDataCache.m */; };
+		77F149F115E2920500134120 /* ATGMemoryCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 77F149E815E2920500134120 /* ATGMemoryCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		77F149F215E2920500134120 /* ATGMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F149E915E2920500134120 /* ATGMemoryCache.m */; };
+		77F149F315E2920500134120 /* ATGRepositoryCoreDataCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 77F149EA15E2920500134120 /* ATGRepositoryCoreDataCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		77F149F415E2920500134120 /* ATGRepositoryCoreDataCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F149EB15E2920500134120 /* ATGRepositoryCoreDataCache.m */; };
+		77F149F615E2923600134120 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77F149F515E2923600134120 /* CoreData.framework */; };
+		77F149FA15E2958A00134120 /* NSObject+ATGRestAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 77F149F815E2958A00134120 /* NSObject+ATGRestAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		77F149FB15E2958A00134120 /* NSObject+ATGRestAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F149F915E2958A00134120 /* NSObject+ATGRestAdditions.m */; };
+		77F149FE15E2965C00134120 /* NSManagedObject+ATGRestAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 77F149FC15E2965C00134120 /* NSManagedObject+ATGRestAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		77F149FF15E2965C00134120 /* NSManagedObject+ATGRestAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F149FD15E2965C00134120 /* NSManagedObject+ATGRestAdditions.m */; };
+		A3B9820CABD02656642CD09B /* UIImage+ATGAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = A3B98BE1527F32A8CA63DE91 /* UIImage+ATGAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3B9898FF5C52E6E17D2D388 /* UIImage+ATGAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B985BE7A08CFBA357CED94 /* UIImage+ATGAdditions.m */; };
+		C50BAB93160123750016EE40 /* JSONParser.h in Headers */ = {isa = PBXBuildFile; fileRef = C50BAB8E160123750016EE40 /* JSONParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C50BAB94160123750016EE40 /* JSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C50BAB8F160123750016EE40 /* JSONParser.m */; };
+		C50BAB95160123750016EE40 /* JSONParserDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = C50BAB90160123750016EE40 /* JSONParserDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C51D8FAD161C7C0C0023908F /* ATGPhotoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C51D8FAC161C7C0C0023908F /* ATGPhotoManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7727DD5616CD9BB700FDCF78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7733FA0016CD9B3800971DC2 /* iOS-rest-client.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 84C999391368634300296485;
+			remoteInfo = "iOS-rest-client";
+		};
+		7733FA0516CD9B3800971DC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7733FA0016CD9B3800971DC2 /* iOS-rest-client.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 77A7B5E91379B9540087388D;
+			remoteInfo = "iOS-rest-client";
+		};
+		7733FA0716CD9B3800971DC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7733FA0016CD9B3800971DC2 /* iOS-rest-client.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 77801A6D1520BEC3007A3B86;
+			remoteInfo = ATGRestTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		062CB10D165E5CC60044FC5D /* ATGThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGThemeManager.h; sourceTree = "<group>"; };
+		062CB10E165E5CC60044FC5D /* ATGThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATGThemeManager.m; sourceTree = "<group>"; };
+		062CB10F165E5CC60044FC5D /* ATGThemeReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGThemeReader.h; sourceTree = "<group>"; };
+		062CB110165E5CC60044FC5D /* ATGThemeReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATGThemeReader.m; sourceTree = "<group>"; };
+		062CB113165E5CC60044FC5D /* UIView+ATGThemeAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ATGThemeAdditions.h"; sourceTree = "<group>"; };
+		062CB114165E5CC60044FC5D /* UIView+ATGThemeAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ATGThemeAdditions.m"; sourceTree = "<group>"; };
+		062D7F2D15F7A327000B1B66 /* ATGSerializable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGSerializable.h; sourceTree = "<group>"; };
+		713BB5C016CD717E007F5151 /* ATGCustomJSONPathManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGCustomJSONPathManager.h; sourceTree = "<group>"; };
+		713BB5C116CD717E007F5151 /* ATGCustomJSONPathManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATGCustomJSONPathManager.m; sourceTree = "<group>"; };
+		713BB5C216CD717E007F5151 /* ATGCustomJSONPathRegex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGCustomJSONPathRegex.h; sourceTree = "<group>"; };
+		713BB5C316CD717E007F5151 /* ATGCustomJSONPathRegex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATGCustomJSONPathRegex.m; sourceTree = "<group>"; };
+		713BB5E116CD8E45007F5151 /* ATGDefaultJSONPathRegex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGDefaultJSONPathRegex.h; sourceTree = "<group>"; };
+		713BB5E216CD8E45007F5151 /* ATGDefaultJSONPathRegex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATGDefaultJSONPathRegex.m; sourceTree = "<group>"; };
+		713BB5E316CD8E45007F5151 /* ATGJSONPathManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGJSONPathManager.h; sourceTree = "<group>"; };
+		713BB5E416CD8E45007F5151 /* ATGJSONPathManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATGJSONPathManager.m; sourceTree = "<group>"; };
+		713BB5E516CD8E45007F5151 /* ATGJSONPathParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGJSONPathParser.h; sourceTree = "<group>"; };
+		713BB5E616CD8E45007F5151 /* ATGJSONPathParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATGJSONPathParser.m; sourceTree = "<group>"; };
+		713BB5E716CD8E45007F5151 /* ATGJSONPathParserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGJSONPathParserDelegate.h; sourceTree = "<group>"; };
+		713BB5E816CD8E45007F5151 /* ATGJSONPathTokenizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGJSONPathTokenizer.h; sourceTree = "<group>"; };
+		713BB5E916CD8E45007F5151 /* ATGJSONPathTokenizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATGJSONPathTokenizer.m; sourceTree = "<group>"; };
+		716B06B916FB882800D01DF2 /* ATGCustomJSONPathParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGCustomJSONPathParser.h; sourceTree = "<group>"; };
+		716B06BA16FB882900D01DF2 /* ATGCustomJSONPathParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATGCustomJSONPathParser.m; sourceTree = "<group>"; };
+		771D4F1615D9AD1400273C4E /* libATGMobileCommon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libATGMobileCommon.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		771D4F1915D9AD1400273C4E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		771D4F1D15D9AD1400273C4E /* ATGMobileCommon-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ATGMobileCommon-Prefix.pch"; sourceTree = "<group>"; };
+		7727DD5A16CD9C6F00FDCF78 /* ATGPhotoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGPhotoManager.h; sourceTree = "<group>"; };
+		7733FA0016CD9B3800971DC2 /* iOS-rest-client.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "iOS-rest-client.xcodeproj"; path = "../ATGRestClient/iOS-rest-client.xcodeproj"; sourceTree = "<group>"; };
+		775BEE85168CD7E800F52398 /* NSObject+ATGAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ATGAdditions.h"; sourceTree = "<group>"; };
+		775BEE86168CD7E900F52398 /* NSObject+ATGAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ATGAdditions.m"; sourceTree = "<group>"; };
+		77F149E315E2920500134120 /* ATGCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGCache.h; sourceTree = "<group>"; };
+		77F149E415E2920500134120 /* ATGCacheManagedDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGCacheManagedDocument.h; sourceTree = "<group>"; };
+		77F149E515E2920500134120 /* ATGCacheManagedDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATGCacheManagedDocument.m; sourceTree = "<group>"; };
+		77F149E615E2920500134120 /* ATGCoreDataCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGCoreDataCache.h; sourceTree = "<group>"; };
+		77F149E715E2920500134120 /* ATGCoreDataCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATGCoreDataCache.m; sourceTree = "<group>"; };
+		77F149E815E2920500134120 /* ATGMemoryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGMemoryCache.h; sourceTree = "<group>"; };
+		77F149E915E2920500134120 /* ATGMemoryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATGMemoryCache.m; sourceTree = "<group>"; };
+		77F149EA15E2920500134120 /* ATGRepositoryCoreDataCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGRepositoryCoreDataCache.h; sourceTree = "<group>"; };
+		77F149EB15E2920500134120 /* ATGRepositoryCoreDataCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATGRepositoryCoreDataCache.m; sourceTree = "<group>"; };
+		77F149F515E2923600134120 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		77F149F815E2958A00134120 /* NSObject+ATGRestAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ATGRestAdditions.h"; sourceTree = "<group>"; };
+		77F149F915E2958A00134120 /* NSObject+ATGRestAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ATGRestAdditions.m"; sourceTree = "<group>"; };
+		77F149FC15E2965C00134120 /* NSManagedObject+ATGRestAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+ATGRestAdditions.h"; sourceTree = "<group>"; };
+		77F149FD15E2965C00134120 /* NSManagedObject+ATGRestAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+ATGRestAdditions.m"; sourceTree = "<group>"; };
+		A3B985BE7A08CFBA357CED94 /* UIImage+ATGAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ATGAdditions.m"; sourceTree = "<group>"; };
+		A3B98BE1527F32A8CA63DE91 /* UIImage+ATGAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ATGAdditions.h"; sourceTree = "<group>"; };
+		C50BAB8E160123750016EE40 /* JSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONParser.h; path = ../JSONParser.h; sourceTree = "<group>"; };
+		C50BAB8F160123750016EE40 /* JSONParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONParser.m; path = ../JSONParser.m; sourceTree = "<group>"; };
+		C50BAB90160123750016EE40 /* JSONParserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONParserDelegate.h; path = ../JSONParserDelegate.h; sourceTree = "<group>"; };
+		C51D8FAC161C7C0C0023908F /* ATGPhotoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATGPhotoManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		771D4F1315D9AD1400273C4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77F149F615E2923600134120 /* CoreData.framework in Frameworks */,
+				771D4F1A15D9AD1400273C4E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		062CB10C165E5CC60044FC5D /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				062CB10D165E5CC60044FC5D /* ATGThemeManager.h */,
+				062CB10E165E5CC60044FC5D /* ATGThemeManager.m */,
+				062CB10F165E5CC60044FC5D /* ATGThemeReader.h */,
+				062CB110165E5CC60044FC5D /* ATGThemeReader.m */,
+				062CB113165E5CC60044FC5D /* UIView+ATGThemeAdditions.h */,
+				062CB114165E5CC60044FC5D /* UIView+ATGThemeAdditions.m */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		06F4F31B15EFA81A00930B06 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				062D7F2D15F7A327000B1B66 /* ATGSerializable.h */,
+				C50BAB8E160123750016EE40 /* JSONParser.h */,
+				C50BAB8F160123750016EE40 /* JSONParser.m */,
+				C50BAB90160123750016EE40 /* JSONParserDelegate.h */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		713BB5BF16CD717E007F5151 /* JSONPath */ = {
+			isa = PBXGroup;
+			children = (
+				713BB5E116CD8E45007F5151 /* ATGDefaultJSONPathRegex.h */,
+				713BB5E216CD8E45007F5151 /* ATGDefaultJSONPathRegex.m */,
+				713BB5E316CD8E45007F5151 /* ATGJSONPathManager.h */,
+				713BB5E416CD8E45007F5151 /* ATGJSONPathManager.m */,
+				713BB5E516CD8E45007F5151 /* ATGJSONPathParser.h */,
+				713BB5E616CD8E45007F5151 /* ATGJSONPathParser.m */,
+				713BB5E716CD8E45007F5151 /* ATGJSONPathParserDelegate.h */,
+				713BB5E816CD8E45007F5151 /* ATGJSONPathTokenizer.h */,
+				713BB5E916CD8E45007F5151 /* ATGJSONPathTokenizer.m */,
+				713BB5C016CD717E007F5151 /* ATGCustomJSONPathManager.h */,
+				713BB5C116CD717E007F5151 /* ATGCustomJSONPathManager.m */,
+				713BB5C216CD717E007F5151 /* ATGCustomJSONPathRegex.h */,
+				713BB5C316CD717E007F5151 /* ATGCustomJSONPathRegex.m */,
+				716B06B916FB882800D01DF2 /* ATGCustomJSONPathParser.h */,
+				716B06BA16FB882900D01DF2 /* ATGCustomJSONPathParser.m */,
+			);
+			path = JSONPath;
+			sourceTree = "<group>";
+		};
+		771D4F0B15D9AD1400273C4E = {
+			isa = PBXGroup;
+			children = (
+				771D4F1B15D9AD1400273C4E /* ATGMobileCommon */,
+				771D4F1815D9AD1400273C4E /* Frameworks */,
+				771D4F1715D9AD1400273C4E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		771D4F1715D9AD1400273C4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				771D4F1615D9AD1400273C4E /* libATGMobileCommon.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		771D4F1815D9AD1400273C4E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7733FA0016CD9B3800971DC2 /* iOS-rest-client.xcodeproj */,
+				77F149F515E2923600134120 /* CoreData.framework */,
+				771D4F1915D9AD1400273C4E /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		771D4F1B15D9AD1400273C4E /* ATGMobileCommon */ = {
+			isa = PBXGroup;
+			children = (
+				7727DD5A16CD9C6F00FDCF78 /* ATGPhotoManager.h */,
+				C51D8FAC161C7C0C0023908F /* ATGPhotoManager.m */,
+				77F149E215E291F700134120 /* Cache */,
+				77F149F715E2957400134120 /* Categories */,
+				713BB5BF16CD717E007F5151 /* JSONPath */,
+				06F4F31B15EFA81A00930B06 /* Parser */,
+				771D4F1C15D9AD1400273C4E /* Supporting Files */,
+				062CB10C165E5CC60044FC5D /* Theme */,
+			);
+			path = ATGMobileCommon;
+			sourceTree = "<group>";
+		};
+		771D4F1C15D9AD1400273C4E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				771D4F1D15D9AD1400273C4E /* ATGMobileCommon-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7733FA0116CD9B3800971DC2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7733FA0616CD9B3800971DC2 /* libiOS-rest-client.a */,
+				7733FA0816CD9B3800971DC2 /* ATGRestTest.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		77F149E215E291F700134120 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				77F149E315E2920500134120 /* ATGCache.h */,
+				77F149E415E2920500134120 /* ATGCacheManagedDocument.h */,
+				77F149E515E2920500134120 /* ATGCacheManagedDocument.m */,
+				77F149E615E2920500134120 /* ATGCoreDataCache.h */,
+				77F149E715E2920500134120 /* ATGCoreDataCache.m */,
+				77F149E815E2920500134120 /* ATGMemoryCache.h */,
+				77F149E915E2920500134120 /* ATGMemoryCache.m */,
+				77F149EA15E2920500134120 /* ATGRepositoryCoreDataCache.h */,
+				77F149EB15E2920500134120 /* ATGRepositoryCoreDataCache.m */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		77F149F715E2957400134120 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				775BEE85168CD7E800F52398 /* NSObject+ATGAdditions.h */,
+				775BEE86168CD7E900F52398 /* NSObject+ATGAdditions.m */,
+				77F149FC15E2965C00134120 /* NSManagedObject+ATGRestAdditions.h */,
+				77F149FD15E2965C00134120 /* NSManagedObject+ATGRestAdditions.m */,
+				77F149F815E2958A00134120 /* NSObject+ATGRestAdditions.h */,
+				77F149F915E2958A00134120 /* NSObject+ATGRestAdditions.m */,
+				A3B985BE7A08CFBA357CED94 /* UIImage+ATGAdditions.m */,
+				A3B98BE1527F32A8CA63DE91 /* UIImage+ATGAdditions.h */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		771D4F3715D9AF3600273C4E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77F149EC15E2920500134120 /* ATGCache.h in Headers */,
+				77F149ED15E2920500134120 /* ATGCacheManagedDocument.h in Headers */,
+				77F149EF15E2920500134120 /* ATGCoreDataCache.h in Headers */,
+				77F149FA15E2958A00134120 /* NSObject+ATGRestAdditions.h in Headers */,
+				77F149FE15E2965C00134120 /* NSManagedObject+ATGRestAdditions.h in Headers */,
+				77F149F115E2920500134120 /* ATGMemoryCache.h in Headers */,
+				77F149F315E2920500134120 /* ATGRepositoryCoreDataCache.h in Headers */,
+				062D7F2E15F7A327000B1B66 /* ATGSerializable.h in Headers */,
+				C50BAB93160123750016EE40 /* JSONParser.h in Headers */,
+				062CB117165E5CC60044FC5D /* ATGThemeReader.h in Headers */,
+				775BEE87168CD7E900F52398 /* NSObject+ATGAdditions.h in Headers */,
+				C50BAB95160123750016EE40 /* JSONParserDelegate.h in Headers */,
+				062CB115165E5CC60044FC5D /* ATGThemeManager.h in Headers */,
+				062CB11B165E5CC60044FC5D /* UIView+ATGThemeAdditions.h in Headers */,
+				713BB5C416CD717E007F5151 /* ATGCustomJSONPathManager.h in Headers */,
+				713BB5EA16CD8E45007F5151 /* ATGDefaultJSONPathRegex.h in Headers */,
+				713BB5EC16CD8E45007F5151 /* ATGJSONPathManager.h in Headers */,
+				713BB5F016CD8E45007F5151 /* ATGJSONPathParserDelegate.h in Headers */,
+				713BB5EE16CD8E45007F5151 /* ATGJSONPathParser.h in Headers */,
+				713BB5F116CD8E45007F5151 /* ATGJSONPathTokenizer.h in Headers */,
+				713BB5C616CD717E007F5151 /* ATGCustomJSONPathRegex.h in Headers */,
+				716B06BB16FB882900D01DF2 /* ATGCustomJSONPathParser.h in Headers */,
+				7727DD5B16CD9C6F00FDCF78 /* ATGPhotoManager.h in Headers */,
+				A3B9820CABD02656642CD09B /* UIImage+ATGAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		771D4F1515D9AD1400273C4E /* ATGMobileCommon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 771D4F2415D9AD1400273C4E /* Build configuration list for PBXNativeTarget "ATGMobileCommon" */;
+			buildPhases = (
+				771D4F1215D9AD1400273C4E /* Sources */,
+				771D4F1315D9AD1400273C4E /* Frameworks */,
+				771D4F3715D9AF3600273C4E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7727DD5716CD9BB700FDCF78 /* PBXTargetDependency */,
+			);
+			name = ATGMobileCommon;
+			productName = ATGMobileCommon;
+			productReference = 771D4F1615D9AD1400273C4E /* libATGMobileCommon.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		771D4F0D15D9AD1400273C4E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Oracle Corp";
+			};
+			buildConfigurationList = 771D4F1015D9AD1400273C4E /* Build configuration list for PBXProject "ATGMobileCommon" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 771D4F0B15D9AD1400273C4E;
+			productRefGroup = 771D4F1715D9AD1400273C4E /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7733FA0116CD9B3800971DC2 /* Products */;
+					ProjectRef = 7733FA0016CD9B3800971DC2 /* iOS-rest-client.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				771D4F1515D9AD1400273C4E /* ATGMobileCommon */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		7733FA0616CD9B3800971DC2 /* libiOS-rest-client.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libiOS-rest-client.a";
+			remoteRef = 7733FA0516CD9B3800971DC2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		7733FA0816CD9B3800971DC2 /* ATGRestTest.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ATGRestTest.octest;
+			remoteRef = 7733FA0716CD9B3800971DC2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXSourcesBuildPhase section */
+		771D4F1215D9AD1400273C4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77F149EE15E2920500134120 /* ATGCacheManagedDocument.m in Sources */,
+				77F149F015E2920500134120 /* ATGCoreDataCache.m in Sources */,
+				77F149F215E2920500134120 /* ATGMemoryCache.m in Sources */,
+				77F149F415E2920500134120 /* ATGRepositoryCoreDataCache.m in Sources */,
+				77F149FB15E2958A00134120 /* NSObject+ATGRestAdditions.m in Sources */,
+				77F149FF15E2965C00134120 /* NSManagedObject+ATGRestAdditions.m in Sources */,
+				C50BAB94160123750016EE40 /* JSONParser.m in Sources */,
+				C51D8FAD161C7C0C0023908F /* ATGPhotoManager.m in Sources */,
+				062CB116165E5CC60044FC5D /* ATGThemeManager.m in Sources */,
+				062CB118165E5CC60044FC5D /* ATGThemeReader.m in Sources */,
+				062CB11C165E5CC60044FC5D /* UIView+ATGThemeAdditions.m in Sources */,
+				775BEE88168CD7E900F52398 /* NSObject+ATGAdditions.m in Sources */,
+				713BB5C516CD717E007F5151 /* ATGCustomJSONPathManager.m in Sources */,
+				713BB5C716CD717E007F5151 /* ATGCustomJSONPathRegex.m in Sources */,
+				713BB5EB16CD8E45007F5151 /* ATGDefaultJSONPathRegex.m in Sources */,
+				713BB5ED16CD8E45007F5151 /* ATGJSONPathManager.m in Sources */,
+				713BB5EF16CD8E45007F5151 /* ATGJSONPathParser.m in Sources */,
+				713BB5F216CD8E45007F5151 /* ATGJSONPathTokenizer.m in Sources */,
+				716B06BC16FB882900D01DF2 /* ATGCustomJSONPathParser.m in Sources */,
+				A3B9898FF5C52E6E17D2D388 /* UIImage+ATGAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7727DD5716CD9BB700FDCF78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "iOS-rest-client";
+			targetProxy = 7727DD5616CD9BB700FDCF78 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		771D4F2215D9AD1400273C4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "-ObjC";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SYMROOT = ../build;
+				USER_HEADER_SEARCH_PATHS = "$(BUILD_ROOT)/../IntermediateBuildFilesPath/UninstalledProducts/** $(BUILT_PRODUCTS_DIR)/**";
+			};
+			name = Debug;
+		};
+		771D4F2315D9AD1400273C4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "-ObjC";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SYMROOT = ../build;
+				USER_HEADER_SEARCH_PATHS = "$(BUILD_ROOT)/../IntermediateBuildFilesPath/UninstalledProducts/** $(BUILT_PRODUCTS_DIR)/**";
+			};
+			name = Release;
+		};
+		771D4F2515D9AD1400273C4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ATGMobileCommon/ATGMobileCommon-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = $TARGET_NAME;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		771D4F2615D9AD1400273C4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ATGMobileCommon/ATGMobileCommon-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = $TARGET_NAME;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		771D4F1015D9AD1400273C4E /* Build configuration list for PBXProject "ATGMobileCommon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				771D4F2215D9AD1400273C4E /* Debug */,
+				771D4F2315D9AD1400273C4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		771D4F2415D9AD1400273C4E /* Build configuration list for PBXNativeTarget "ATGMobileCommon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				771D4F2515D9AD1400273C4E /* Debug */,
+				771D4F2615D9AD1400273C4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 771D4F0D15D9AD1400273C4E /* Project object */;
+}

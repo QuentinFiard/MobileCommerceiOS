@@ -1,0 +1,17 @@
+//
+// Prefix header for all source files of the 'iOS-rest-client' target in the 'iOS-rest-client' project
+//
+
+#ifdef __OBJC__
+  #import <Foundation/Foundation.h>
+  #import <UIKit/UIKit.h>
+#endif
+
+#ifdef REST_DEBUG_MODE
+#define DebugLog( s, ... ) NSLog( @"<%p %@:(%d)> %@", self, [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
+#else
+#define DebugLog( s, ... ) 
+#endif
+
+#import <SystemConfiguration/SystemConfiguration.h>
+#import "ATGRest.h"

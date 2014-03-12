@@ -1,0 +1,474 @@
+ [
+  {
+  "primaryColor" : "@color:0.202 0.308 0.403 1", //Default ATG Blue Color
+  "secondaryColor" : "@color:0.259 0.290 0.271 1",   
+  "tertiaryColor" : "@color:0.918 0.761 0.337 1", //Orange Color Used in AutoSuggest Highlighting
+  "quaternaryColor" : "@color:0.925 0.918 0.93 1", //Offwhite/Light Gray color
+  "quinaryColor" : "@color:0 0.294 0.976 1",  
+  "whiteColor"   : "@color:1 1 1 1",
+  "blackColor"   : "@color:0 0 0 1", 
+  "clearColor"   : "@color:0 0 0 0",
+  "darkGrayColor": "@color:0.4 0.4 0.4 1",
+  "grayColor"    : "@color:0.7 0.7, 0.7 1",
+  "lightGrayColor" : "@color:0.85 0.85 0.85 1",
+  "lightBlueColor" : "@color:0.565 0.765 0.956 0.2",
+  "navBarLightBlue" : "@color:0.565 0.765 0.956 1",
+  "UIControlStateNormal" : "@uint:0",
+  "UIControlStateHighlighted" : "@uint:1",
+  "UIControlStateDisabled" : "@uint:2",
+  "UIControlStateSelected" : "@uint:4",
+  "UIControlContentHorizontalAlignmentCenter" : "@uint:0",
+  "UIControlContentHorizontalAlignmentLeft" : "@uint:1",
+  "UIControlContentHorizontalAlignmentRight" : "@unit:2",
+  "UIControlContentHorizontalAlignmentFill" : "@unit:3",
+  "UIBarMetricsDefault" : "@uint:0",
+  "NSTextAlignmentLeft"    : "@uint:0",
+  "NSTextAlignmentCenter"    : "@uint:1",
+  "NSTextAlignmentRight"    : "@uint:2",
+  "NSTextAlignmentJustified"    : "@uint:3",
+  "NSTextAlignmentNatural"    : "@uint:4",
+  "NSLineBreakByWordWrapping" : "@uint:0",
+  "NSLineBreakByTruncatingHead" : "@uint:3",
+  "NSLineBreakByTruncatingTail" : "@uint:4",
+  "searchButtonNormal" : "@image:search-button-normal",
+  "searchButtonHighlighted" : "@image:search-button-highlighted",
+  },
+  {
+  "UILabel" : {
+  "backgroundColor" : "@resource:clearColor"
+  },
+  "UISegmentedControl" : {
+  "tintColor" : "@resource:primaryColor"
+  },
+  "UITextView" : {
+  "textColor" : "@resource:blackColor",
+  "backgroundColor" : "@resource:primaryColor",
+  "alpha" : "@float:1.0"
+  },
+  "UITextField" : {
+  "textColor" : "@resource:blackColor"
+  },
+  "UINavigationBar" : {
+  "tintColor" : "@resource:primaryColor"
+  },
+  "ATGNavigationBar" : {
+  "backgroundImage:forBarMetrics" : ["@image:navigationbar-background", "@resource:UIBarMetricsDefault"]
+  },
+  "ATGButton" : {
+  "titleColor:forState" : ["@resource:whiteColor", "@resource:UIControlStateNormal"]
+  },
+  "UILabel>ATGButton" : {
+  "font" : "@font:Helvetica-Bold:14"
+  },
+  "UISearchBar" : {
+  "searchFieldBackgroundImage:forState" : ["@image:search-field-background", "@resource:UIControlStateNormal"],
+  "backgroundImage" : "@image:search-panel-background"
+  },
+  "UIBarButtonItem" : {
+  "tintColor" : "@resource:primaryColor"
+  },
+  "ATGBarButton>ATGNavigationBar" : {
+  "backgroundImage:forState" : ["@image:navigationbar-backbutton-normal", "@resource:UIControlStateNormal"],
+  "backgroundImage:forState~1" : ["@image:navigationbar-backbutton-highlighted", "@resource:UIControlStateHighlighted"],
+  "backgroundImage:forState~2" : ["@image:navigationbar-backbutton-normal", "@resource:UIControlStateDisabled"],
+  "backgroundImage:forState~3" : ["@image:navigationbar-backbutton-highlighted", "@resource:UIControlStateSelected"]
+  },
+  "ATGBackButton>ATGNavigationBar" : {
+  "backgroundImage:forState" : ["@nil", "@resource:UIControlStateNormal"],
+  "backgroundImage:forState~1" : ["@nil", "@resource:UIControlStateHighlighted"],
+  "backgroundImage:forState~2" : ["@nil", "@resource:UIControlStateDisabled"],
+  "backgroundImage:forState~3" : ["@nil", "@resource:UIControlStateSelected"]
+  },
+  "ATGNavigationBar" : {
+  "backgroundImage:forBarMetrics" : ["@image:navigationbar-background", "@uint:0"]
+  },
+  "~navBarButton_iPad" : {
+  "titleColor:forState" : ["@resource:navBarLightBlue", "@resource:UIControlStateNormal"],
+  "titleLabel.font" : "@font:Futura:16"
+  },
+  "~toolbarButton" : {
+  "backgroundImage:forState" : ["@image:toolbar-button-normal", "@resource:UIControlStateNormal"],
+  "backgroundImage:forState~1" : ["@image:toolbar-button-highlighted", "@resource:UIControlStateHighlighted"],
+  "backgroundImage:forState~2" : ["@image:toolbar-button-highlighted", "@resource:UIControlStateDisabled"],
+  "backgroundImage:forState~3" : ["@image:toolbar-button-highlighted", "@resource:UIControlStateSelected"]
+  },
+  "~toolbarDivider" : {
+  "backgroundImage:forState" : ["@image:toolbar-button-divider", "@resource:UIControlStateNormal"],
+  "backgroundImage:forState~1" : ["@image:toolbar-button-divider", "@resource:UIControlStateHighlighted"],
+  "backgroundImage:forState~2" : ["@image:toolbar-button-divider", "@resource:UIControlStateDisabled"],
+  "backgroundImage:forState~3" : ["@image:toolbar-button-divider", "@resource:UIControlStateSelected"]
+  },
+  "~navBarBackButton" : {
+  "backgroundImage:forState" : ["@image:navigationbar-backbutton-normal", "@resource:UIControlStateNormal"],
+  "backgroundImage:forState" : ["@image:navigationbar-backbutton-highlighted", "@resource:UIControlStateNormal"]
+  },
+  "~navBarRightButton" : {
+  "backgroundImage:forState" : ["@image:navigationbar-rightbutton-normal", "@resource:UIControlStateNormal"]
+  },
+  "~cancelButton" : {
+  "backgroundImage:forState" : ["@image:navigationbar-rightbutton-normal", "@resource:UIControlStateNormal"],
+  "backgroundImage:forState~1" : ["@image:navigationbar-rightbutton-highlighted", "@resource:UIControlStateHighlighted"],
+  "backgroundImage:forState~2" : ["@image:navigationbar-rightbutton-normal", "@resource:UIControlStateDisabled"],
+  "backgroundImage:forState~3" : ["@image:navigationbar-rightbutton-highlighted", "@resource:UIControlStateSelected"]
+  },
+  "~formTitle2Label" : {
+  "font" : "@font:Helvetica-Bold:13",
+  "textAlignment" : "@resource:NSTextAlignmentLeft"
+  },
+  "~cardTypeLabel" : {
+  "font" : "@font:Helvetica-Bold:14",
+  "textAlignment" : "@resource:NSTextAlignmentCenter",
+  "backgroundColor" : "@resource:clearColor"
+  },
+  "~cardExpirationLabel" : {
+  "font" : "@font:Helvetica-Bold:14",
+  "textAlignment" : "@resource:NSTextAlignmentLeft",
+  "backgroundColor" : "@resource:clearColor"
+  },
+  "~copyrightLabel" : {
+  "font" : "@font:Verdana:11",
+  "textAlignment" : "@resource:NSTextAlignmentCenter",
+  "numberOfLines" : "@uint:0",
+  "backgroundColor" : "@resource:clearColor",
+  "textColor" : "@color:0.2 0.2 0.2 1"
+  },
+  "~headerLabel" : {
+  "textColor" : "@color:0.662 0.647 0.164 1",
+  "textAlignment" : "@resource:NSTextAlignmentCenter",
+  "numberOfLines" : "@uint:2",
+  "backgroundColor" : "@resource:clearColor"
+  },
+  "~whitePageHeaderLabel" : {
+  "textColor" : "@resource:whiteColor",
+  "font"      : "@font:Verdana:20",
+  "textAlignment" : "@resource:NSTextAlignmentCenter",
+  "backgroundColor" : "@resource:clearColor"
+  },
+  "~validationErrorTextLabel" : {
+  "textColor" : "@resource:whiteColor",
+  "font"      : "@font:Verdana:11",
+  "textAlignment" : "@resource:NSTextAlignmentCenter",
+  "backgroundColor" : "@resource:clearColor"
+  },
+  "~actionConfirmationLabel" : {
+  "textColor" : "@resource:blackColor",
+  "font"      : "@font:Verdana:14",
+  "textAlignment" : "@resource:NSTextAlignmentCenter",
+  "numberOfLines" : "@uint:0",
+  "backgroundColor" : "@resource:clearColor"
+  },
+  /*Profile Order History Table View Cell*/
+  "~orderHistoryTableViewCell" : {
+  "backgroundColor" : "@resource:quaternaryColor"
+  },
+  "~formFieldLabel" : {
+  "font"      : "@font:Helvetica-Bold:11",
+  "textColor" : "@resource:blackColor",
+  "textAlignment" : "@resource:NSTextAlignmentLeft"
+  },
+  "~formFieldBlackLabel" : {
+  "font"      : "@font:Helvetica:11",
+  "textColor" : "@resource:blackColor"
+  },
+  "~formTitleLabel" : {
+  "textColor" : "@resource:blackColor",
+  "font"      : "@font:Helvetica-Bold:13",
+  "textAlignment" : "@resource:NSTextAlignmentLeft",
+  "backgroundColor" : "@resource:clearColor"
+  },
+  "~formTextLabel" : {
+  "font"      : "@font:Verdana:14",
+  "textAlignment" : "@resource:NSTextAlignmentLeft",
+  "textColor" : "@color:0.317 0.4 0.568 1"
+  },
+  "~formTitleDisabledRightLabel" : {
+  "font"      : "@font:Helvetica-Bold:13",
+  "textAlignment" : "@resource:NSTextAlignmentRight",
+  "textColor" : "@color:0.6 0.6 0.6 1"
+  },
+  "~productTitleLabel" : {
+  "font"      : "@font:Verdana:17",
+  "minimumFontSize" : "@uint:17",
+  "textColor" : "@resource:blackColor",
+  "backgroundColor" : "@resource:clearColor"
+  },
+  "~smallProductTitleLabel" : {
+  "font"      : "@font:Verdana:14",
+  "minimumFontSize" : "@uint:14",
+  "textColor" : "@resource:blackColor",
+  "backgroundColor" : "@resource:clearColor"
+  },
+  "~productStatusLabel" : {
+  "font"      : "@font:Helvetica-Bold:13",
+  "textAlignment" : "@resource:NSTextAlignmentCenter",
+  "textColor" : "@color:0.6 0.6 0.6 1"
+  },
+  "~productDetailsHeaderLabel" : {
+  "font"      : "@font:Verdana:14",
+  "textColor" : "@color:0.450 0.486 0.043 1",
+  "textAlignment" : "@resource:NSTextAlignmentLeft",
+  "backgroundColor" : "@resource:clearColor"
+  },
+  "~searchWasPriceLabel" : {
+  "font"      : "@font:Helvetica:12",
+  "textColor" : "@color:0.6 0.6 0.6 1"
+  },
+  "~searchProductLabel" : {
+  "font"      : "@font:Helvetica:17",
+  "textColor" : "@resource:blackColor"
+  },
+  "~productDetailsTextLabel" : {
+  "font"      : "@font:Verdana:11",
+  "textColor" : "@color:0.2 0.2 0.2 1",
+  "numberOfLines" : "@uint:0",
+  "textAlignment" : "@resource:NSTextAlignmentLeft"
+  },
+  "~priceLabel" : {
+  "font"      : "@font:Helvetica-Bold:15",
+  "textColor" : "@color:0.717 0.352 0 1"
+  },
+  "~formFieldBlackLabel" : {
+  "font"      : "@font:Helvetica-Bold:11",
+  "textColor" : "@resource:blackColor"
+  },
+  "~prefixSkuLabel" : {
+  "font"      : "@font:Helvetica-Bold:15",
+  "textAlignment" : "@resource:NSTextAlignmentLeft",
+  "textColor" : "@resource:blackColor"
+  },
+  "~skuLabel" : {
+  "font"      : "@font:Helvetica-Bold:15",
+  "textAlignment" : "@resource:NSTextAlignmentLeft",
+  "textColor" : "@color:0.317 0.4 0.568 1",
+  "minimumFontSize" : "@uint:15",
+  "lineBreakMode" : "@resource:NSLineBreakByTruncatingTail"
+  },
+  "~skuButtonLabel_iPad" : {
+  "font"      : "@font:Helvetica-Bold:24",
+  "textAlignment" : "@resource:NSTextAlignmentLeft",
+  "textColor" : "@resource:blackColor",
+  "backgroundColor" : "@resource:clearColor"
+  },  
+  "~skuLabel_iPad" : {
+  "font"      : "@font:Helvetica-Bold:24",
+  "textAlignment" : "@resource:NSTextAlignmentCenter",
+  "textColor" : "@color:0.223 0.333 0.529 1"
+  },
+  "~orderDetailsShipToCell" : {
+  "backgroundColor" : "@color:0.878 0.878 0.878 1"
+  },
+  "~cvvLabel" : {
+  "font"      : "@font:Helvetica:14",
+  "textAlignment" : "@resource:NSTextAlignmentLeft",
+  "textColor" : "@resource:blackColor",
+  "backgroundColor" : "@resource:clearColor"
+  },
+  "~blueButton" : {
+  "backgroundImage:forState" : ["@image:button-regular-normal", "@resource:UIControlStateNormal"],
+  "backgroundImage:forState~1" : ["@image:button-regular-highlighted", "@resource:UIControlStateHighlighted"],
+  "backgroundImage:forState~2" : ["@image:button-regular-normal", "@resource:UIControlStateDisabled"],
+  "backgroundImage:forState~3" : ["@image:button-regular-highlighted", "@resource:UIControlStateSelected"]
+  },
+  "~miniButton" : {
+  "backgroundImage:forState" : ["@image:button-mini-normal", "@resource:UIControlStateNormal"],
+  "backgroundImage:forState~1" : ["@image:button-mini-highlighted", "@resource:UIControlStateHighlighted"],
+  "backgroundImage:forState~3" : ["@image:button-mini-highlighted", "@resource:UIControlStateSelected"]
+  },
+  "~productButton" : {
+  "backgroundImage:forState" : ["@image:button-cart-normal", "@resource:UIControlStateNormal"],
+  "backgroundImage:forState~highlighted" : ["@image:button-cart-highlighted", "@resource:UIControlStateHighlighted"]
+  },
+  "~logoutButton" : {
+  "backgroundColor" : "@resource:clearColor",
+  "titleStyleName" : "formTitleLabel",
+  "titleColor:forState" : ["@resource:blackColor", "@resource:UIControlStateNormal"]
+  },
+  "~storeButton" : {
+  "cornerRadius" : "@float:10",
+  "borderWidth" : "@float:1",
+  "borderColor" : "@color:0.667 0.667 0.667 1",
+  "titleStyleName" : "formFieldLabel",
+  "titleColor:forState" : ["@color:0.317 0.4 0.568 1", "@resource:UIControlStateNormal"],
+  "titleColor:forState" : ["@color:0.317 0.4 0.568 1", "@resource:UIControlStateSelected"]
+  },
+  "~cartButton" : {
+  "contentHorizontalAlignment" : "@resource:UIControlContentHorizontalAlignmentLeft",
+  "contentEdgeInsets" : "@edge_insets:0 5 0 0",
+  "titleColor:forState" : ["@resource:blackColor", "@resource:UIControlStateNormal"],
+  "backgroundColor" : "@resource:whiteColor",
+  "clipToBounds" : "@bool:YES",
+  "titleStyleName" : "formTitleLabel",
+  "cornerRadius" : "@float:10",
+  "borderWidth" : "@float:1"
+  },
+  "~deleteButton" : {
+  "contentHorizontalAlignment" : "@resource:UIControlContentHorizontalAlignmentLeft",
+  "contentEdgeInsets" : "@edge_insets:0 7 0 7",
+  "titleColor:forState" : ["@resource:blackColor", "@resource:UIControlStateNormal"],
+  "backgroundColor" : "@resource:whiteColor",
+  "cornerRadius" : "@float:10",
+  "borderWidth" : "@float:1",
+  "borderColor" : "@resource:primaryColor",
+  "clipToBounds" : "@bool:YES"
+  },
+  "~skuButton" : {
+  "contentHorizontalAlignment" : "@resource:UIControlContentHorizontalAlignmentRight",
+  "contentEdgeInsets" : "@edge_insets:0 10 0 0",
+  "titleColor:forState" : ["@resource:blackColor", "@resource:UIControlStateNormal"],
+  "backgroundImage:forState" : ["@image:btn-white-large", "@resource:UIControlStateNormal"]
+  },
+  "~blueButton_iPad" : {
+  "backgroundImage:forState" : ["@image:btn-blue-large", "@resource:UIControlStateNormal"],
+  "titleColor:forState" : ["@resource:whiteColor", "@resource:UIControlStateNormal"]
+  },
+  "~infoButton" : {
+  "backgroundImage:forState" : ["@image:icon-help", "@resource:UIControlStateNormal"]
+  },
+  "~myStyle" : {
+  "backgroundColor" : "@resource:tertiaryColor"
+  },
+  "~resultsListTitleLabel" : {
+  "font"  : "@font:Helvetica-Bold:14",
+  "textColor" : "@resource:blackColor",
+  "highlightedTextColor" : "@resource:whiteColor",
+  "backgroundColor" : "@resource:clearColor"
+  },
+  "~resultsListSubTitleLabel" : {
+  "font"  : "@font:Helvetica-Bold:14",
+  "textColor" : "@resource:blackColor",
+  "highlightedTextColor" : "@resource:whiteColor",
+  "backgroundColor" : "@resource:clearColor"
+  },
+  "~resultsListSubTitleLabel2" : {
+  "font"  : "@font:Helvetica:12",
+  "textColor" : "@resource:blackColor",
+  "highlightedTextColor" : "@resource:whiteColor",
+  "backgroundColor" : "@resource:clearColor"
+  },
+  "~resultsListAuxTitleLabel" : {
+  "font"  : "@font:Helvetica-Bold:12",
+  "textColor" : "@resource:blackColor",
+  "highlightedTextColor" : "@resource:whiteColor",
+  "backgroundColor" : "@resource:clearColor"
+  },
+  "~resultsListEvenRow" : {
+  "backgroundColor" : "@resource:whiteColor"
+  },
+  "~resultsListOddRow" : {
+  "backgroundColor" : "@resource:whiteColor"
+  },
+  "~resultsSectionHeaderLabel" : {
+  "font"  : "@font:Helvetica-Bold:15",
+  "textColor" : "@resource:tertiaryColor",
+  "backgroundColor" : "@resource:clearColor"
+  },
+  "~resultsSectionHeader" : {
+  "backgroundColor" : "@resource:lightGrayColor"
+  },
+  "~resultsListSingleRendererTitleLabel" : {
+  "font" : "@font:Helvetica-Bold:14",
+  "textColor" : "@resource:darkGrayColor",
+  "textAlignment" : "@resource:NSTextAlignmentCenter"
+  },
+  "~resultsListSingleRendererSubTitleLabel" : {
+  "font" : "@font:Helvetica-Bold:12",
+  "textColor" : "@resource:darkGrayColor",
+  "textAlignment" : "@resource:NSTextAlignmentCenter"
+  },
+  "~noResultsMainLabel" : {
+  "font"  : "@font:Helvetica-Bold:14",
+  "textColor" : "@resource:darkGrayColor",
+  "highlightedTextColor" : "@resource:whiteColor",
+  "backgroundColor" : "@resource:clearColor"
+  },
+  "~breadcrumbsSectionHeaderLabel" : {
+  "font"  : "@font:Helvetica-Bold:15",
+  "textColor" : "@resource:primaryColor",
+  "backgroundColor" : "@resource:clearColor"
+  },
+  "~breadcrumbsSectionHeaderClearButton" : {
+  "titleColor:forState" : ["@resource:secondaryColor", "@resource:UIControlStateNormal"],
+  "backgroundColor" : "@resource:clearColor"
+  },
+  "~breadcrumbsSectionHeaderClearButtonLabel" : {
+  "font"  : "@font:Helvetica-Bold:12",
+  "textAlignment" : "@resource:NSTextAlignmentCenter",
+  },
+  "~breadcrumbsSectionHeader" : {
+  "backgroundColor" : "@resource:quaternaryColor"
+  },
+  "~refinementMenuTitleLabel" : {
+  "font"  : "@font:Helvetica:14",
+  "textColor" : "@resource:primaryColor",
+  "highlightedTextColor" : "@color:0.6 0.8 1 1",
+  "backgroundColor" : "@resource:clearColor"
+  },
+  "~refinementMenuCountLabel" : {
+  "font"  : "@font:Helvetica-Bold:14",
+  "textColor" : "@resource:lightGrayColor",
+  "highlightedTextColor" : "@color:0.584 0.6 0.584 1",
+  "backgroundColor" : "@resource:grayColor"
+  },
+  "~refinementMenu" : {
+  "backgroundColor" : "@resource:quaternaryColor"
+  },
+  "~refinementMenuSelected" : {
+  "backgroundColor" : "@resource:primaryColor"
+  },
+  "~refinementMenuSectionHeaderLabel" : {
+  "font"  : "@font:Helvetica-Bold:15",
+  "textColor" : "@resource:primaryColor",
+  "backgroundColor" : "@resource:clearColor"
+  },
+  "~refinementMenuSectionHeader" : {
+  "backgroundColor" : "@resource:quaternaryColor"
+  },
+  "~priceSliderRangeLabel" : {
+  "font"  : "@font:Helvetica:12",
+  "textColor" : "@resource:primaryColor",
+  "backgroundColor" : "@resource:clearColor"
+  },
+  "~breadcrumb" : {
+  "backgroundColor" : "@resource:quaternaryColor"
+  },
+  "~breadcrumbSelected" : {
+  "backgroundColor" : "@resource:primaryColor"
+  },
+  "~breadcrumbLabel" : {
+  "font"  : "@font:Helvetica:14",
+  "textColor" : "@resource:primaryColor",
+  "highlightedTextColor" : "@color::0.6 0.8 1 1",
+  "backgroundColor" : "@resource:clearColor"
+  },
+  "~searchAdjustments" : {
+  "backgroundColor" : "@resource:lightGrayColor"
+  },
+  "~searchAdjustmentsSeparator" : {
+  "backgroundColor" : "@resource:darkGrayColor"
+  },
+  "~searchAdjustmentsTitleLabel" : {
+  "font"  : "@font:Helvetica-Bold:14",
+  "textColor" : "@resource:blackColor",
+  "backgroundColor" : "@resource:clearColor",
+  "lineBreakMode" : "@resource:NSLineBreakByTruncatingHead",
+  "minimumScaleFactor" : "@float:0.75",
+  "adjustsFontSizeToFitWidth" : "@bool:YES"
+  },
+  "~pagingButton" : {
+  "font"      : "@font:Helvetica-Bold:12",
+  "titleColor:forState" : ["@resource:darkGrayColor", "@resource:UIControlStateNormal"],
+  "titleColor:forState~1" : ["@resource:lightGrayColor", "@resource:UIControlStateHighlighted"]
+  },
+  "~barButtonItemBadge_iPad" : {
+  "font"      : "@font:Helvetica-Bold:10",
+  "textAlignment" : "@resource:NSTextAlignmentCenter",
+  "textColor" : "@resource:whiteColor",
+  "clipToBounds" : "@bool:YES",
+  "backgroundColor" : "@color:0.717 0.352 0 1",
+  "layer.shadowRadius" : "@float:3",
+  "layer.shadowColor" : "@colorref:@resource:blackColor",
+  "layer.borderWidth" : "@float:2",
+  "layer.borderColor" : "@colorref:@resource:whiteColor"
+  }
+  }
+  ]

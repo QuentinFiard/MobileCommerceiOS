@@ -1,0 +1,16 @@
+//
+// Prefix header for all source files of the 'EMMobileClient' target in the 'EMMobileClient' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <CoreData/CoreData.h>
+    #import <ATGMobileCommon/NSObject+ATGRestAdditions.h>
+    #import <ATGMobileCommon/NSManagedObject+ATGRestAdditions.h>
+#endif
+
+#ifdef ATG_DEBUG_MODE
+#define DebugLog( s, ... ) NSLog( @"<%p %@:(%d)> %@", self, [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
+#else
+#define DebugLog( s, ... )
+#endif

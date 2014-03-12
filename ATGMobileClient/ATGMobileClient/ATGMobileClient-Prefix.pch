@@ -1,0 +1,34 @@
+//
+// Prefix header for all source files of the 'ATGMobileClient' target in the 'ATGMobileClient' project
+//
+
+#ifdef __OBJC__
+  #import <Foundation/Foundation.h>
+  #import <UIKit/UIKit.h>
+  #import <QuartzCore/QuartzCore.h>
+  #import <iOS-rest-client/NSString+ATGRestAdditions.h>
+  #import <ATGMobileCommon/UIView+ATGThemeAdditions.h>
+  #import <ATGMobileCommon/ATGThemeManager.h>
+  #import <ATGMobileCommon/NSObject+ATGRestAdditions.h>
+  #import <ATGMobileCommon/NSObject+ATGAdditions.h>
+  #import <ATGMobileCommon/NSManagedObject+ATGRestAdditions.h>
+  #import <ATGUIElements/UIColor+ATGAdditions.h>
+  #import <ATGUIElements/UIFont+ATGAdditions.h>
+  #import <ATGUIElements/UIView+Layout.h>
+  #import "UIViewController+ATGAdditions.h"
+  #import "UITableViewCell+ATGAdditions.h"
+  #import "NSString+ATGAdditions.h"
+  #import "NSBundle+ATGAdditions.h"
+#endif
+
+#define IS_IPHONE5 (([[UIScreen mainScreen] bounds].size.height-568)?NO:YES)
+
+#define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+
+#define DEVICE_ORIENTATION [[UIApplication sharedApplication] statusBarOrientation]
+
+#ifdef ATG_DEBUG_MODE
+#define DebugLog( s, ... ) NSLog( @"<%p %@:(%d)> %@", self, [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
+#else
+#define DebugLog( s, ... ) 
+#endif

@@ -1,0 +1,718 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06B43D001731641200F41A0A /* ATGActionBlocker.h in Headers */ = {isa = PBXBuildFile; fileRef = 06B43CC51731641200F41A0A /* ATGActionBlocker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06B43D011731641200F41A0A /* ATGActionBlocker.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B43CC61731641200F41A0A /* ATGActionBlocker.m */; };
+		06B43D021731641200F41A0A /* ATGConfirmationPane.h in Headers */ = {isa = PBXBuildFile; fileRef = 06B43CC71731641200F41A0A /* ATGConfirmationPane.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06B43D031731641200F41A0A /* ATGConfirmationPane.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B43CC81731641200F41A0A /* ATGConfirmationPane.m */; };
+		06B43D041731641200F41A0A /* ATGDatePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 06B43CC91731641200F41A0A /* ATGDatePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06B43D051731641200F41A0A /* ATGDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B43CCA1731641200F41A0A /* ATGDatePicker.m */; };
+		06B43D061731641200F41A0A /* ATGButtonTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 06B43CCC1731641200F41A0A /* ATGButtonTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06B43D071731641200F41A0A /* ATGButtonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B43CCD1731641200F41A0A /* ATGButtonTableViewCell.m */; };
+		06B43D081731641200F41A0A /* ATGGridView.h in Headers */ = {isa = PBXBuildFile; fileRef = 06B43CCF1731641200F41A0A /* ATGGridView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06B43D091731641200F41A0A /* ATGGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B43CD01731641200F41A0A /* ATGGridView.m */; };
+		06B43D0A1731641200F41A0A /* ATGGridViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 06B43CD11731641200F41A0A /* ATGGridViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06B43D0B1731641200F41A0A /* ATGGridViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B43CD21731641200F41A0A /* ATGGridViewCell.m */; };
+		06B43D0C1731641200F41A0A /* ATGKeyboardToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = 06B43CD41731641200F41A0A /* ATGKeyboardToolbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06B43D0D1731641200F41A0A /* ATGKeyboardToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B43CD51731641200F41A0A /* ATGKeyboardToolbar.m */; };
+		06B43D0E1731641200F41A0A /* ATGPrefixLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 06B43CD71731641200F41A0A /* ATGPrefixLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06B43D0F1731641200F41A0A /* ATGPrefixLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B43CD81731641200F41A0A /* ATGPrefixLabel.m */; };
+		06B43D101731641200F41A0A /* ATGBackButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 06B43CDA1731641200F41A0A /* ATGBackButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06B43D111731641200F41A0A /* ATGBackButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B43CDB1731641200F41A0A /* ATGBackButton.m */; };
+		06B43D121731641200F41A0A /* ATGButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 06B43CDC1731641200F41A0A /* ATGButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06B43D131731641200F41A0A /* ATGButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B43CDD1731641200F41A0A /* ATGButton.m */; };
+		06B43D161731641200F41A0A /* ATGRotateButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 06B43CE01731641200F41A0A /* ATGRotateButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06B43D171731641200F41A0A /* ATGRotateButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B43CE11731641200F41A0A /* ATGRotateButton.m */; };
+		06B43D1A1731641200F41A0A /* ATGTableAccessoryButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 06B43CE41731641200F41A0A /* ATGTableAccessoryButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06B43D1B1731641200F41A0A /* ATGTableAccessoryButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B43CE51731641200F41A0A /* ATGTableAccessoryButton.m */; };
+		06B43D1C1731641200F41A0A /* ATGTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 06B43CE61731641200F41A0A /* ATGTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06B43D1D1731641200F41A0A /* ATGTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B43CE71731641200F41A0A /* ATGTextField.m */; };
+		06B43D1E1731641200F41A0A /* ATGUIElementStyles.h in Headers */ = {isa = PBXBuildFile; fileRef = 06B43CE81731641200F41A0A /* ATGUIElementStyles.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06B43D1F1731641200F41A0A /* ATGCVVTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 06B43CEA1731641200F41A0A /* ATGCVVTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06B43D201731641200F41A0A /* ATGCVVTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B43CEB1731641200F41A0A /* ATGCVVTextField.m */; };
+		06B43D231731641200F41A0A /* ATGFormInputField.h in Headers */ = {isa = PBXBuildFile; fileRef = 06B43CEE1731641200F41A0A /* ATGFormInputField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06B43D241731641200F41A0A /* ATGFormInputField.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B43CEF1731641200F41A0A /* ATGFormInputField.m */; };
+		06B43D251731641200F41A0A /* ATGNumericDetailsTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 06B43CF01731641200F41A0A /* ATGNumericDetailsTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06B43D261731641200F41A0A /* ATGNumericDetailsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B43CF11731641200F41A0A /* ATGNumericDetailsTableViewCell.m */; };
+		06B43D271731641200F41A0A /* ATGProfileTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 06B43CF21731641200F41A0A /* ATGProfileTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06B43D281731641200F41A0A /* ATGProfileTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B43CF31731641200F41A0A /* ATGProfileTextField.m */; };
+		06B43D2B1731641200F41A0A /* ATGEmailValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 06B43CF71731641200F41A0A /* ATGEmailValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06B43D2C1731641200F41A0A /* ATGEmailValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B43CF81731641200F41A0A /* ATGEmailValidator.m */; };
+		06B43D2D1731641200F41A0A /* ATGInputValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 06B43CF91731641200F41A0A /* ATGInputValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06B43D2E1731641200F41A0A /* ATGRequiredValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 06B43CFA1731641200F41A0A /* ATGRequiredValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06B43D2F1731641200F41A0A /* ATGRequiredValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B43CFB1731641200F41A0A /* ATGRequiredValidator.m */; };
+		06B43D301731641200F41A0A /* ATGValidatableDropdown.h in Headers */ = {isa = PBXBuildFile; fileRef = 06B43CFC1731641200F41A0A /* ATGValidatableDropdown.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06B43D311731641200F41A0A /* ATGValidatableDropdown.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B43CFD1731641200F41A0A /* ATGValidatableDropdown.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		06B43D321731641200F41A0A /* ATGValidatableInput.h in Headers */ = {isa = PBXBuildFile; fileRef = 06B43CFE1731641200F41A0A /* ATGValidatableInput.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06B43D331731641200F41A0A /* ATGValidatableInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B43CFF1731641200F41A0A /* ATGValidatableInput.m */; };
+		06B43D481731693000F41A0A /* UIColor+ATGAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 06B43D441731693000F41A0A /* UIColor+ATGAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06B43D491731693000F41A0A /* UIColor+ATGAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B43D451731693000F41A0A /* UIColor+ATGAdditions.m */; };
+		06B43D4A1731693000F41A0A /* UIFont+ATGAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 06B43D461731693000F41A0A /* UIFont+ATGAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06B43D4B1731693000F41A0A /* UIFont+ATGAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 06B43D471731693000F41A0A /* UIFont+ATGAdditions.m */; };
+		4284DFEC16131CDC005380FB /* ATGProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 4284DFEA16131CDC005380FB /* ATGProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4284DFED16131CDC005380FB /* ATGProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4284DFEB16131CDC005380FB /* ATGProgressHUD.m */; };
+		771D4F8E15D9B78300273C4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 771D4F8D15D9B78300273C4E /* Foundation.framework */; };
+		771D4F9515D9B78300273C4E /* ATGUIElements.m in Sources */ = {isa = PBXBuildFile; fileRef = 771D4F9415D9B78300273C4E /* ATGUIElements.m */; };
+		771D4FB215D9B84900273C4E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 771D4FAF15D9B82000273C4E /* UIKit.framework */; };
+		771D4FB315D9B87800273C4E /* ATGUIElements.h in Headers */ = {isa = PBXBuildFile; fileRef = 771D4F9215D9B78300273C4E /* ATGUIElements.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C5187A001725E575008D7221 /* ATGListSelectionTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C51879FE1725E575008D7221 /* ATGListSelectionTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C5187A011725E575008D7221 /* ATGListSelectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C51879FF1725E575008D7221 /* ATGListSelectionTableViewController.m */; };
+		C531D22315ED3F96001350BD /* EMButton.h in Headers */ = {isa = PBXBuildFile; fileRef = C531D21315ED3F96001350BD /* EMButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C531D22415ED3F96001350BD /* EMButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C531D21415ED3F96001350BD /* EMButton.m */; settings = {COMPILER_FLAGS = ""; }; };
+		C531D22915ED3F96001350BD /* EMPageControl.h in Headers */ = {isa = PBXBuildFile; fileRef = C531D21915ED3F96001350BD /* EMPageControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C531D22A15ED3F96001350BD /* EMPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = C531D21A15ED3F96001350BD /* EMPageControl.m */; settings = {COMPILER_FLAGS = ""; }; };
+		C531D22B15ED3F96001350BD /* EMUIFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = C531D21B15ED3F96001350BD /* EMUIFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C531D22C15ED3F96001350BD /* EMUIFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = C531D21C15ED3F96001350BD /* EMUIFunctions.m */; settings = {COMPILER_FLAGS = ""; }; };
+		C531D22D15ED3F96001350BD /* EMLoadingView.h in Headers */ = {isa = PBXBuildFile; fileRef = C531D21D15ED3F96001350BD /* EMLoadingView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C531D22E15ED3F96001350BD /* EMLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = C531D21E15ED3F96001350BD /* EMLoadingView.m */; settings = {COMPILER_FLAGS = ""; }; };
+		C531D22F15ED3F96001350BD /* UIView+Layout.h in Headers */ = {isa = PBXBuildFile; fileRef = C531D21F15ED3F96001350BD /* UIView+Layout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C531D23015ED3F96001350BD /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = C531D22015ED3F96001350BD /* UIView+Layout.m */; settings = {COMPILER_FLAGS = ""; }; };
+		C532D97E15EFD38C00F4E245 /* ATGImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = C532D97C15EFD38C00F4E245 /* ATGImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C532D97F15EFD38C00F4E245 /* ATGImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C532D97D15EFD38C00F4E245 /* ATGImageView.m */; };
+		C534992216837B8A00B4517D /* ATGCarouselLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = C534991E16837B8A00B4517D /* ATGCarouselLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C534992316837B8A00B4517D /* ATGCarouselLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C534991F16837B8A00B4517D /* ATGCarouselLayout.m */; };
+		C534992416837B8A00B4517D /* ATGCarouselView.h in Headers */ = {isa = PBXBuildFile; fileRef = C534992016837B8A00B4517D /* ATGCarouselView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C534992516837B8A00B4517D /* ATGCarouselView.m in Sources */ = {isa = PBXBuildFile; fileRef = C534992116837B8A00B4517D /* ATGCarouselView.m */; };
+		C53812051613500B0023E8B0 /* EMLinkedLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = C53812031613500B0023E8B0 /* EMLinkedLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C53812061613500B0023E8B0 /* EMLinkedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C53812041613500B0023E8B0 /* EMLinkedLabel.m */; };
+		C53CA2611695F424001950F8 /* ATGRangeSlider.h in Headers */ = {isa = PBXBuildFile; fileRef = C53CA25F1695F424001950F8 /* ATGRangeSlider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C53CA2621695F424001950F8 /* ATGRangeSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = C53CA2601695F424001950F8 /* ATGRangeSlider.m */; };
+		C56B29E716B8725800B6CB77 /* UICollectionViewCellSetObject.h in Headers */ = {isa = PBXBuildFile; fileRef = C56B29DF16B8725800B6CB77 /* UICollectionViewCellSetObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C578C83C174D0ECB005A6892 /* UITableView+ReloadWithCallBack.h in Headers */ = {isa = PBXBuildFile; fileRef = C578C83A174D0ECB005A6892 /* UITableView+ReloadWithCallBack.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C578C83D174D0ECB005A6892 /* UITableView+ReloadWithCallBack.m in Sources */ = {isa = PBXBuildFile; fileRef = C578C83B174D0ECB005A6892 /* UITableView+ReloadWithCallBack.m */; };
+		C578C842174D1155005A6892 /* ATGBoundTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = C578C840174D1155005A6892 /* ATGBoundTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C578C843174D1155005A6892 /* ATGBoundTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = C578C841174D1155005A6892 /* ATGBoundTextField.m */; };
+		F76B1A932A585EB649A1C167 /* ATGBoundTextFieldDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F76B11C04F7B225106786527 /* ATGBoundTextFieldDelegate.m */; };
+		F76B1BF2975AD44913967303 /* ATGBoundTextFieldDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = F76B1863BD3C88EC9CC1DE00 /* ATGBoundTextFieldDelegate.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7733F9C816CC454700971DC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7733F9C416CC454700971DC2 /* ATGMobileCommon.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 771D4F1615D9AD1400273C4E;
+			remoteInfo = ATGMobileCommon;
+		};
+		7733F9CA16CC454D00971DC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7733F9C416CC454700971DC2 /* ATGMobileCommon.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 771D4F1515D9AD1400273C4E;
+			remoteInfo = ATGMobileCommon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06B43CC51731641200F41A0A /* ATGActionBlocker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGActionBlocker.h; sourceTree = "<group>"; };
+		06B43CC61731641200F41A0A /* ATGActionBlocker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATGActionBlocker.m; sourceTree = "<group>"; };
+		06B43CC71731641200F41A0A /* ATGConfirmationPane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGConfirmationPane.h; sourceTree = "<group>"; };
+		06B43CC81731641200F41A0A /* ATGConfirmationPane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATGConfirmationPane.m; sourceTree = "<group>"; };
+		06B43CC91731641200F41A0A /* ATGDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGDatePicker.h; sourceTree = "<group>"; };
+		06B43CCA1731641200F41A0A /* ATGDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATGDatePicker.m; sourceTree = "<group>"; };
+		06B43CCC1731641200F41A0A /* ATGButtonTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGButtonTableViewCell.h; sourceTree = "<group>"; };
+		06B43CCD1731641200F41A0A /* ATGButtonTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATGButtonTableViewCell.m; sourceTree = "<group>"; };
+		06B43CCF1731641200F41A0A /* ATGGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGGridView.h; sourceTree = "<group>"; };
+		06B43CD01731641200F41A0A /* ATGGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATGGridView.m; sourceTree = "<group>"; };
+		06B43CD11731641200F41A0A /* ATGGridViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGGridViewCell.h; sourceTree = "<group>"; };
+		06B43CD21731641200F41A0A /* ATGGridViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATGGridViewCell.m; sourceTree = "<group>"; };
+		06B43CD41731641200F41A0A /* ATGKeyboardToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGKeyboardToolbar.h; sourceTree = "<group>"; };
+		06B43CD51731641200F41A0A /* ATGKeyboardToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATGKeyboardToolbar.m; sourceTree = "<group>"; };
+		06B43CD71731641200F41A0A /* ATGPrefixLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGPrefixLabel.h; sourceTree = "<group>"; };
+		06B43CD81731641200F41A0A /* ATGPrefixLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATGPrefixLabel.m; sourceTree = "<group>"; };
+		06B43CDA1731641200F41A0A /* ATGBackButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGBackButton.h; sourceTree = "<group>"; };
+		06B43CDB1731641200F41A0A /* ATGBackButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATGBackButton.m; sourceTree = "<group>"; };
+		06B43CDC1731641200F41A0A /* ATGButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGButton.h; sourceTree = "<group>"; };
+		06B43CDD1731641200F41A0A /* ATGButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATGButton.m; sourceTree = "<group>"; };
+		06B43CE01731641200F41A0A /* ATGRotateButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGRotateButton.h; sourceTree = "<group>"; };
+		06B43CE11731641200F41A0A /* ATGRotateButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATGRotateButton.m; sourceTree = "<group>"; };
+		06B43CE41731641200F41A0A /* ATGTableAccessoryButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGTableAccessoryButton.h; sourceTree = "<group>"; };
+		06B43CE51731641200F41A0A /* ATGTableAccessoryButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATGTableAccessoryButton.m; sourceTree = "<group>"; };
+		06B43CE61731641200F41A0A /* ATGTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGTextField.h; sourceTree = "<group>"; };
+		06B43CE71731641200F41A0A /* ATGTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATGTextField.m; sourceTree = "<group>"; };
+		06B43CE81731641200F41A0A /* ATGUIElementStyles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGUIElementStyles.h; sourceTree = "<group>"; };
+		06B43CEA1731641200F41A0A /* ATGCVVTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGCVVTextField.h; sourceTree = "<group>"; };
+		06B43CEB1731641200F41A0A /* ATGCVVTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATGCVVTextField.m; sourceTree = "<group>"; };
+		06B43CEE1731641200F41A0A /* ATGFormInputField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGFormInputField.h; sourceTree = "<group>"; };
+		06B43CEF1731641200F41A0A /* ATGFormInputField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATGFormInputField.m; sourceTree = "<group>"; };
+		06B43CF01731641200F41A0A /* ATGNumericDetailsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGNumericDetailsTableViewCell.h; sourceTree = "<group>"; };
+		06B43CF11731641200F41A0A /* ATGNumericDetailsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATGNumericDetailsTableViewCell.m; sourceTree = "<group>"; };
+		06B43CF21731641200F41A0A /* ATGProfileTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGProfileTextField.h; sourceTree = "<group>"; };
+		06B43CF31731641200F41A0A /* ATGProfileTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATGProfileTextField.m; sourceTree = "<group>"; };
+		06B43CF71731641200F41A0A /* ATGEmailValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGEmailValidator.h; sourceTree = "<group>"; };
+		06B43CF81731641200F41A0A /* ATGEmailValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATGEmailValidator.m; sourceTree = "<group>"; };
+		06B43CF91731641200F41A0A /* ATGInputValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGInputValidator.h; sourceTree = "<group>"; };
+		06B43CFA1731641200F41A0A /* ATGRequiredValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGRequiredValidator.h; sourceTree = "<group>"; };
+		06B43CFB1731641200F41A0A /* ATGRequiredValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATGRequiredValidator.m; sourceTree = "<group>"; };
+		06B43CFC1731641200F41A0A /* ATGValidatableDropdown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGValidatableDropdown.h; sourceTree = "<group>"; };
+		06B43CFD1731641200F41A0A /* ATGValidatableDropdown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATGValidatableDropdown.m; sourceTree = "<group>"; };
+		06B43CFE1731641200F41A0A /* ATGValidatableInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGValidatableInput.h; sourceTree = "<group>"; };
+		06B43CFF1731641200F41A0A /* ATGValidatableInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATGValidatableInput.m; sourceTree = "<group>"; };
+		06B43D341731644A00F41A0A /* ATGDataFormatters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGDataFormatters.h; sourceTree = "<group>"; };
+		06B43D351731644A00F41A0A /* ATGDataFormatters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATGDataFormatters.m; sourceTree = "<group>"; };
+		06B43D441731693000F41A0A /* UIColor+ATGAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ATGAdditions.h"; sourceTree = "<group>"; };
+		06B43D451731693000F41A0A /* UIColor+ATGAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ATGAdditions.m"; sourceTree = "<group>"; };
+		06B43D461731693000F41A0A /* UIFont+ATGAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+ATGAdditions.h"; sourceTree = "<group>"; };
+		06B43D471731693000F41A0A /* UIFont+ATGAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+ATGAdditions.m"; sourceTree = "<group>"; };
+		4284DFEA16131CDC005380FB /* ATGProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGProgressHUD.h; sourceTree = "<group>"; };
+		4284DFEB16131CDC005380FB /* ATGProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATGProgressHUD.m; sourceTree = "<group>"; };
+		771D4F8A15D9B78300273C4E /* libATGUIElements.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libATGUIElements.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		771D4F8D15D9B78300273C4E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		771D4F9115D9B78300273C4E /* ATGUIElements-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ATGUIElements-Prefix.pch"; sourceTree = "<group>"; };
+		771D4F9215D9B78300273C4E /* ATGUIElements.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATGUIElements.h; sourceTree = "<group>"; };
+		771D4F9415D9B78300273C4E /* ATGUIElements.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATGUIElements.m; sourceTree = "<group>"; };
+		771D4FAF15D9B82000273C4E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7733F9C416CC454700971DC2 /* ATGMobileCommon.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ATGMobileCommon.xcodeproj; path = ../ATGMobileCommon/ATGMobileCommon.xcodeproj; sourceTree = "<group>"; };
+		C51879FE1725E575008D7221 /* ATGListSelectionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGListSelectionTableViewController.h; sourceTree = "<group>"; };
+		C51879FF1725E575008D7221 /* ATGListSelectionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATGListSelectionTableViewController.m; sourceTree = "<group>"; };
+		C531D21315ED3F96001350BD /* EMButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMButton.h; sourceTree = "<group>"; };
+		C531D21415ED3F96001350BD /* EMButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMButton.m; sourceTree = "<group>"; };
+		C531D21915ED3F96001350BD /* EMPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMPageControl.h; sourceTree = "<group>"; };
+		C531D21A15ED3F96001350BD /* EMPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMPageControl.m; sourceTree = "<group>"; };
+		C531D21B15ED3F96001350BD /* EMUIFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMUIFunctions.h; sourceTree = "<group>"; };
+		C531D21C15ED3F96001350BD /* EMUIFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMUIFunctions.m; sourceTree = "<group>"; };
+		C531D21D15ED3F96001350BD /* EMLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMLoadingView.h; sourceTree = "<group>"; };
+		C531D21E15ED3F96001350BD /* EMLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMLoadingView.m; sourceTree = "<group>"; };
+		C531D21F15ED3F96001350BD /* UIView+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Layout.h"; sourceTree = "<group>"; };
+		C531D22015ED3F96001350BD /* UIView+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Layout.m"; sourceTree = "<group>"; };
+		C532D97C15EFD38C00F4E245 /* ATGImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGImageView.h; sourceTree = "<group>"; };
+		C532D97D15EFD38C00F4E245 /* ATGImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATGImageView.m; sourceTree = "<group>"; };
+		C534991E16837B8A00B4517D /* ATGCarouselLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGCarouselLayout.h; sourceTree = "<group>"; };
+		C534991F16837B8A00B4517D /* ATGCarouselLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATGCarouselLayout.m; sourceTree = "<group>"; };
+		C534992016837B8A00B4517D /* ATGCarouselView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGCarouselView.h; sourceTree = "<group>"; };
+		C534992116837B8A00B4517D /* ATGCarouselView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATGCarouselView.m; sourceTree = "<group>"; };
+		C53812031613500B0023E8B0 /* EMLinkedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMLinkedLabel.h; sourceTree = "<group>"; };
+		C53812041613500B0023E8B0 /* EMLinkedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMLinkedLabel.m; sourceTree = "<group>"; };
+		C53CA25F1695F424001950F8 /* ATGRangeSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGRangeSlider.h; sourceTree = "<group>"; };
+		C53CA2601695F424001950F8 /* ATGRangeSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATGRangeSlider.m; sourceTree = "<group>"; };
+		C56B29DF16B8725800B6CB77 /* UICollectionViewCellSetObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICollectionViewCellSetObject.h; sourceTree = "<group>"; };
+		C578C83A174D0ECB005A6892 /* UITableView+ReloadWithCallBack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+ReloadWithCallBack.h"; sourceTree = "<group>"; };
+		C578C83B174D0ECB005A6892 /* UITableView+ReloadWithCallBack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+ReloadWithCallBack.m"; sourceTree = "<group>"; };
+		C578C840174D1155005A6892 /* ATGBoundTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGBoundTextField.h; sourceTree = "<group>"; };
+		C578C841174D1155005A6892 /* ATGBoundTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATGBoundTextField.m; sourceTree = "<group>"; };
+		F76B11C04F7B225106786527 /* ATGBoundTextFieldDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATGBoundTextFieldDelegate.m; sourceTree = "<group>"; };
+		F76B1863BD3C88EC9CC1DE00 /* ATGBoundTextFieldDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGBoundTextFieldDelegate.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		771D4F8715D9B78300273C4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				771D4FB215D9B84900273C4E /* UIKit.framework in Frameworks */,
+				771D4F8E15D9B78300273C4E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06B43CCB1731641200F41A0A /* Button Cell */ = {
+			isa = PBXGroup;
+			children = (
+				06B43CCC1731641200F41A0A /* ATGButtonTableViewCell.h */,
+				06B43CCD1731641200F41A0A /* ATGButtonTableViewCell.m */,
+			);
+			path = "Button Cell";
+			sourceTree = "<group>";
+		};
+		06B43CCE1731641200F41A0A /* Grid View */ = {
+			isa = PBXGroup;
+			children = (
+				06B43CCF1731641200F41A0A /* ATGGridView.h */,
+				06B43CD01731641200F41A0A /* ATGGridView.m */,
+				06B43CD11731641200F41A0A /* ATGGridViewCell.h */,
+				06B43CD21731641200F41A0A /* ATGGridViewCell.m */,
+			);
+			path = "Grid View";
+			sourceTree = "<group>";
+		};
+		06B43CD31731641200F41A0A /* Keyboard Toolbar */ = {
+			isa = PBXGroup;
+			children = (
+				06B43CD41731641200F41A0A /* ATGKeyboardToolbar.h */,
+				06B43CD51731641200F41A0A /* ATGKeyboardToolbar.m */,
+			);
+			path = "Keyboard Toolbar";
+			sourceTree = "<group>";
+		};
+		06B43CD61731641200F41A0A /* Prefix Label */ = {
+			isa = PBXGroup;
+			children = (
+				06B43CD71731641200F41A0A /* ATGPrefixLabel.h */,
+				06B43CD81731641200F41A0A /* ATGPrefixLabel.m */,
+			);
+			path = "Prefix Label";
+			sourceTree = "<group>";
+		};
+		06B43CD91731641200F41A0A /* UI Elements */ = {
+			isa = PBXGroup;
+			children = (
+				06B43CDA1731641200F41A0A /* ATGBackButton.h */,
+				06B43CDB1731641200F41A0A /* ATGBackButton.m */,
+				06B43CDC1731641200F41A0A /* ATGButton.h */,
+				06B43CDD1731641200F41A0A /* ATGButton.m */,
+				06B43CE01731641200F41A0A /* ATGRotateButton.h */,
+				06B43CE11731641200F41A0A /* ATGRotateButton.m */,
+				06B43CE41731641200F41A0A /* ATGTableAccessoryButton.h */,
+				06B43CE51731641200F41A0A /* ATGTableAccessoryButton.m */,
+				06B43CE61731641200F41A0A /* ATGTextField.h */,
+				06B43CE71731641200F41A0A /* ATGTextField.m */,
+				06B43CE81731641200F41A0A /* ATGUIElementStyles.h */,
+			);
+			path = "UI Elements";
+			sourceTree = "<group>";
+		};
+		06B43CE91731641200F41A0A /* UI Usable Elements */ = {
+			isa = PBXGroup;
+			children = (
+				C578C840174D1155005A6892 /* ATGBoundTextField.h */,
+				C578C841174D1155005A6892 /* ATGBoundTextField.m */,
+				06B43CEA1731641200F41A0A /* ATGCVVTextField.h */,
+				06B43CEB1731641200F41A0A /* ATGCVVTextField.m */,
+				06B43CEE1731641200F41A0A /* ATGFormInputField.h */,
+				06B43CEF1731641200F41A0A /* ATGFormInputField.m */,
+				06B43CF01731641200F41A0A /* ATGNumericDetailsTableViewCell.h */,
+				06B43CF11731641200F41A0A /* ATGNumericDetailsTableViewCell.m */,
+				06B43CF21731641200F41A0A /* ATGProfileTextField.h */,
+				06B43CF31731641200F41A0A /* ATGProfileTextField.m */,
+				F76B11C04F7B225106786527 /* ATGBoundTextFieldDelegate.m */,
+				F76B1863BD3C88EC9CC1DE00 /* ATGBoundTextFieldDelegate.h */,
+			);
+			path = "UI Usable Elements";
+			sourceTree = "<group>";
+		};
+		06B43CF41731641200F41A0A /* Validatable Input */ = {
+			isa = PBXGroup;
+			children = (
+				06B43CF71731641200F41A0A /* ATGEmailValidator.h */,
+				06B43CF81731641200F41A0A /* ATGEmailValidator.m */,
+				06B43CF91731641200F41A0A /* ATGInputValidator.h */,
+				06B43CFA1731641200F41A0A /* ATGRequiredValidator.h */,
+				06B43CFB1731641200F41A0A /* ATGRequiredValidator.m */,
+				06B43CFC1731641200F41A0A /* ATGValidatableDropdown.h */,
+				06B43CFD1731641200F41A0A /* ATGValidatableDropdown.m */,
+				06B43CFE1731641200F41A0A /* ATGValidatableInput.h */,
+				06B43CFF1731641200F41A0A /* ATGValidatableInput.m */,
+			);
+			path = "Validatable Input";
+			sourceTree = "<group>";
+		};
+		06B43D361731644A00F41A0A /* Data Formatters */ = {
+			isa = PBXGroup;
+			children = (
+				06B43D341731644A00F41A0A /* ATGDataFormatters.h */,
+				06B43D351731644A00F41A0A /* ATGDataFormatters.m */,
+			);
+			name = "Data Formatters";
+			path = "../../ATGMobileClient/ATGMobileClient/UI/MobileCommerce/Data Formatters";
+			sourceTree = "<group>";
+		};
+		06B43D3F1731682200F41A0A /* ATG Categories */ = {
+			isa = PBXGroup;
+			children = (
+				C578C83A174D0ECB005A6892 /* UITableView+ReloadWithCallBack.h */,
+				C578C83B174D0ECB005A6892 /* UITableView+ReloadWithCallBack.m */,
+				06B43D441731693000F41A0A /* UIColor+ATGAdditions.h */,
+				06B43D451731693000F41A0A /* UIColor+ATGAdditions.m */,
+				06B43D461731693000F41A0A /* UIFont+ATGAdditions.h */,
+				06B43D471731693000F41A0A /* UIFont+ATGAdditions.m */,
+			);
+			path = "ATG Categories";
+			sourceTree = "<group>";
+		};
+		4284DFE816131C69005380FB /* CommonUI */ = {
+			isa = PBXGroup;
+			children = (
+				C53CA25F1695F424001950F8 /* ATGRangeSlider.h */,
+				C53CA2601695F424001950F8 /* ATGRangeSlider.m */,
+				C534991E16837B8A00B4517D /* ATGCarouselLayout.h */,
+				C534991F16837B8A00B4517D /* ATGCarouselLayout.m */,
+				C534992016837B8A00B4517D /* ATGCarouselView.h */,
+				C534992116837B8A00B4517D /* ATGCarouselView.m */,
+				4284DFEA16131CDC005380FB /* ATGProgressHUD.h */,
+				4284DFEB16131CDC005380FB /* ATGProgressHUD.m */,
+			);
+			path = CommonUI;
+			sourceTree = "<group>";
+		};
+		771D4F7F15D9B78300273C4E = {
+			isa = PBXGroup;
+			children = (
+				771D4F8F15D9B78300273C4E /* ATGUIElements */,
+				771D4F8C15D9B78300273C4E /* Frameworks */,
+				771D4F8B15D9B78300273C4E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		771D4F8B15D9B78300273C4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				771D4F8A15D9B78300273C4E /* libATGUIElements.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		771D4F8C15D9B78300273C4E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7733F9C416CC454700971DC2 /* ATGMobileCommon.xcodeproj */,
+				771D4F8D15D9B78300273C4E /* Foundation.framework */,
+				771D4FAF15D9B82000273C4E /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		771D4F8F15D9B78300273C4E /* ATGUIElements */ = {
+			isa = PBXGroup;
+			children = (
+				06B43D3F1731682200F41A0A /* ATG Categories */,
+				06B43D361731644A00F41A0A /* Data Formatters */,
+				06B43CC51731641200F41A0A /* ATGActionBlocker.h */,
+				06B43CC61731641200F41A0A /* ATGActionBlocker.m */,
+				06B43CC71731641200F41A0A /* ATGConfirmationPane.h */,
+				06B43CC81731641200F41A0A /* ATGConfirmationPane.m */,
+				06B43CC91731641200F41A0A /* ATGDatePicker.h */,
+				06B43CCA1731641200F41A0A /* ATGDatePicker.m */,
+				06B43CCB1731641200F41A0A /* Button Cell */,
+				06B43CCE1731641200F41A0A /* Grid View */,
+				06B43CD31731641200F41A0A /* Keyboard Toolbar */,
+				06B43CD61731641200F41A0A /* Prefix Label */,
+				06B43CD91731641200F41A0A /* UI Elements */,
+				06B43CE91731641200F41A0A /* UI Usable Elements */,
+				06B43CF41731641200F41A0A /* Validatable Input */,
+				C56B29DF16B8725800B6CB77 /* UICollectionViewCellSetObject.h */,
+				C532D97C15EFD38C00F4E245 /* ATGImageView.h */,
+				C532D97D15EFD38C00F4E245 /* ATGImageView.m */,
+				771D4F9215D9B78300273C4E /* ATGUIElements.h */,
+				771D4F9415D9B78300273C4E /* ATGUIElements.m */,
+				C51879FE1725E575008D7221 /* ATGListSelectionTableViewController.h */,
+				C51879FF1725E575008D7221 /* ATGListSelectionTableViewController.m */,
+				4284DFE816131C69005380FB /* CommonUI */,
+				C531D21015ED3F96001350BD /* EndecaUI */,
+				771D4F9015D9B78300273C4E /* Supporting Files */,
+			);
+			path = ATGUIElements;
+			sourceTree = "<group>";
+		};
+		771D4F9015D9B78300273C4E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				771D4F9115D9B78300273C4E /* ATGUIElements-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7733F9C516CC454700971DC2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7733F9C916CC454700971DC2 /* libATGMobileCommon.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C531D21015ED3F96001350BD /* EndecaUI */ = {
+			isa = PBXGroup;
+			children = (
+				C531D21315ED3F96001350BD /* EMButton.h */,
+				C531D21415ED3F96001350BD /* EMButton.m */,
+				C531D21915ED3F96001350BD /* EMPageControl.h */,
+				C531D21A15ED3F96001350BD /* EMPageControl.m */,
+				C531D21B15ED3F96001350BD /* EMUIFunctions.h */,
+				C531D21C15ED3F96001350BD /* EMUIFunctions.m */,
+				C531D21D15ED3F96001350BD /* EMLoadingView.h */,
+				C531D21E15ED3F96001350BD /* EMLoadingView.m */,
+				C531D21F15ED3F96001350BD /* UIView+Layout.h */,
+				C531D22015ED3F96001350BD /* UIView+Layout.m */,
+				C53812031613500B0023E8B0 /* EMLinkedLabel.h */,
+				C53812041613500B0023E8B0 /* EMLinkedLabel.m */,
+			);
+			path = EndecaUI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		771D4FB115D9B82700273C4E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				771D4FB315D9B87800273C4E /* ATGUIElements.h in Headers */,
+				C531D22315ED3F96001350BD /* EMButton.h in Headers */,
+				4284DFEC16131CDC005380FB /* ATGProgressHUD.h in Headers */,
+				C531D22915ED3F96001350BD /* EMPageControl.h in Headers */,
+				C531D22B15ED3F96001350BD /* EMUIFunctions.h in Headers */,
+				C531D22D15ED3F96001350BD /* EMLoadingView.h in Headers */,
+				C531D22F15ED3F96001350BD /* UIView+Layout.h in Headers */,
+				C532D97E15EFD38C00F4E245 /* ATGImageView.h in Headers */,
+				C53812051613500B0023E8B0 /* EMLinkedLabel.h in Headers */,
+				C534992216837B8A00B4517D /* ATGCarouselLayout.h in Headers */,
+				C534992416837B8A00B4517D /* ATGCarouselView.h in Headers */,
+				C53CA2611695F424001950F8 /* ATGRangeSlider.h in Headers */,
+				C56B29E716B8725800B6CB77 /* UICollectionViewCellSetObject.h in Headers */,
+				C5187A001725E575008D7221 /* ATGListSelectionTableViewController.h in Headers */,
+				06B43D001731641200F41A0A /* ATGActionBlocker.h in Headers */,
+				06B43D021731641200F41A0A /* ATGConfirmationPane.h in Headers */,
+				06B43D041731641200F41A0A /* ATGDatePicker.h in Headers */,
+				06B43D061731641200F41A0A /* ATGButtonTableViewCell.h in Headers */,
+				06B43D081731641200F41A0A /* ATGGridView.h in Headers */,
+				06B43D0A1731641200F41A0A /* ATGGridViewCell.h in Headers */,
+				06B43D0C1731641200F41A0A /* ATGKeyboardToolbar.h in Headers */,
+				06B43D0E1731641200F41A0A /* ATGPrefixLabel.h in Headers */,
+				06B43D101731641200F41A0A /* ATGBackButton.h in Headers */,
+				06B43D121731641200F41A0A /* ATGButton.h in Headers */,
+				06B43D161731641200F41A0A /* ATGRotateButton.h in Headers */,
+				06B43D1A1731641200F41A0A /* ATGTableAccessoryButton.h in Headers */,
+				06B43D1C1731641200F41A0A /* ATGTextField.h in Headers */,
+				06B43D1E1731641200F41A0A /* ATGUIElementStyles.h in Headers */,
+				06B43D1F1731641200F41A0A /* ATGCVVTextField.h in Headers */,
+				06B43D231731641200F41A0A /* ATGFormInputField.h in Headers */,
+				06B43D251731641200F41A0A /* ATGNumericDetailsTableViewCell.h in Headers */,
+				06B43D271731641200F41A0A /* ATGProfileTextField.h in Headers */,
+				06B43D2B1731641200F41A0A /* ATGEmailValidator.h in Headers */,
+				06B43D2D1731641200F41A0A /* ATGInputValidator.h in Headers */,
+				06B43D2E1731641200F41A0A /* ATGRequiredValidator.h in Headers */,
+				06B43D301731641200F41A0A /* ATGValidatableDropdown.h in Headers */,
+				06B43D321731641200F41A0A /* ATGValidatableInput.h in Headers */,
+				06B43D481731693000F41A0A /* UIColor+ATGAdditions.h in Headers */,
+				06B43D4A1731693000F41A0A /* UIFont+ATGAdditions.h in Headers */,
+				C578C83C174D0ECB005A6892 /* UITableView+ReloadWithCallBack.h in Headers */,
+				C578C842174D1155005A6892 /* ATGBoundTextField.h in Headers */,
+				F76B1BF2975AD44913967303 /* ATGBoundTextFieldDelegate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		771D4F8915D9B78300273C4E /* ATGUIElements */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 771D4F9815D9B78300273C4E /* Build configuration list for PBXNativeTarget "ATGUIElements" */;
+			buildPhases = (
+				771D4F8615D9B78300273C4E /* Sources */,
+				771D4F8715D9B78300273C4E /* Frameworks */,
+				771D4FB115D9B82700273C4E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7733F9CB16CC454D00971DC2 /* PBXTargetDependency */,
+			);
+			name = ATGUIElements;
+			productName = ATGUIElements;
+			productReference = 771D4F8A15D9B78300273C4E /* libATGUIElements.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		771D4F8115D9B78300273C4E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Oracle Corp";
+			};
+			buildConfigurationList = 771D4F8415D9B78300273C4E /* Build configuration list for PBXProject "ATGUIElements" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 771D4F7F15D9B78300273C4E;
+			productRefGroup = 771D4F8B15D9B78300273C4E /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 7733F9C516CC454700971DC2 /* Products */;
+					ProjectRef = 7733F9C416CC454700971DC2 /* ATGMobileCommon.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				771D4F8915D9B78300273C4E /* ATGUIElements */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		7733F9C916CC454700971DC2 /* libATGMobileCommon.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libATGMobileCommon.a;
+			remoteRef = 7733F9C816CC454700971DC2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXSourcesBuildPhase section */
+		771D4F8615D9B78300273C4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				771D4F9515D9B78300273C4E /* ATGUIElements.m in Sources */,
+				C531D22415ED3F96001350BD /* EMButton.m in Sources */,
+				C531D22A15ED3F96001350BD /* EMPageControl.m in Sources */,
+				C531D22C15ED3F96001350BD /* EMUIFunctions.m in Sources */,
+				C531D22E15ED3F96001350BD /* EMLoadingView.m in Sources */,
+				C531D23015ED3F96001350BD /* UIView+Layout.m in Sources */,
+				4284DFED16131CDC005380FB /* ATGProgressHUD.m in Sources */,
+				C532D97F15EFD38C00F4E245 /* ATGImageView.m in Sources */,
+				C53812061613500B0023E8B0 /* EMLinkedLabel.m in Sources */,
+				C534992316837B8A00B4517D /* ATGCarouselLayout.m in Sources */,
+				C534992516837B8A00B4517D /* ATGCarouselView.m in Sources */,
+				C53CA2621695F424001950F8 /* ATGRangeSlider.m in Sources */,
+				C5187A011725E575008D7221 /* ATGListSelectionTableViewController.m in Sources */,
+				06B43D011731641200F41A0A /* ATGActionBlocker.m in Sources */,
+				06B43D031731641200F41A0A /* ATGConfirmationPane.m in Sources */,
+				06B43D051731641200F41A0A /* ATGDatePicker.m in Sources */,
+				06B43D071731641200F41A0A /* ATGButtonTableViewCell.m in Sources */,
+				06B43D091731641200F41A0A /* ATGGridView.m in Sources */,
+				06B43D0B1731641200F41A0A /* ATGGridViewCell.m in Sources */,
+				06B43D0D1731641200F41A0A /* ATGKeyboardToolbar.m in Sources */,
+				06B43D0F1731641200F41A0A /* ATGPrefixLabel.m in Sources */,
+				06B43D111731641200F41A0A /* ATGBackButton.m in Sources */,
+				06B43D131731641200F41A0A /* ATGButton.m in Sources */,
+				06B43D171731641200F41A0A /* ATGRotateButton.m in Sources */,
+				06B43D1B1731641200F41A0A /* ATGTableAccessoryButton.m in Sources */,
+				06B43D1D1731641200F41A0A /* ATGTextField.m in Sources */,
+				06B43D201731641200F41A0A /* ATGCVVTextField.m in Sources */,
+				06B43D241731641200F41A0A /* ATGFormInputField.m in Sources */,
+				06B43D261731641200F41A0A /* ATGNumericDetailsTableViewCell.m in Sources */,
+				06B43D281731641200F41A0A /* ATGProfileTextField.m in Sources */,
+				06B43D2C1731641200F41A0A /* ATGEmailValidator.m in Sources */,
+				06B43D2F1731641200F41A0A /* ATGRequiredValidator.m in Sources */,
+				06B43D311731641200F41A0A /* ATGValidatableDropdown.m in Sources */,
+				06B43D331731641200F41A0A /* ATGValidatableInput.m in Sources */,
+				06B43D491731693000F41A0A /* UIColor+ATGAdditions.m in Sources */,
+				06B43D4B1731693000F41A0A /* UIFont+ATGAdditions.m in Sources */,
+				C578C83D174D0ECB005A6892 /* UITableView+ReloadWithCallBack.m in Sources */,
+				C578C843174D1155005A6892 /* ATGBoundTextField.m in Sources */,
+				F76B1A932A585EB649A1C167 /* ATGBoundTextFieldDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7733F9CB16CC454D00971DC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ATGMobileCommon;
+			targetProxy = 7733F9CA16CC454D00971DC2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		771D4F9615D9B78300273C4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SYMROOT = ../build;
+				USER_HEADER_SEARCH_PATHS = "$(BUILD_ROOT)/../IntermediateBuildFilesPath/UninstalledProducts/** $(BUILT_PRODUCTS_DIR)/**";
+			};
+			name = Debug;
+		};
+		771D4F9715D9B78300273C4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SYMROOT = ../build;
+				USER_HEADER_SEARCH_PATHS = "$(BUILD_ROOT)/../IntermediateBuildFilesPath/UninstalledProducts/** $(BUILT_PRODUCTS_DIR)/**";
+			};
+			name = Release;
+		};
+		771D4F9915D9B78300273C4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DSTROOT = /tmp/ATGUIElements.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ATGUIElements/ATGUIElements-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = $TARGET_NAME;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		771D4F9A15D9B78300273C4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DSTROOT = /tmp/ATGUIElements.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ATGUIElements/ATGUIElements-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = $TARGET_NAME;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		771D4F8415D9B78300273C4E /* Build configuration list for PBXProject "ATGUIElements" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				771D4F9615D9B78300273C4E /* Debug */,
+				771D4F9715D9B78300273C4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		771D4F9815D9B78300273C4E /* Build configuration list for PBXNativeTarget "ATGUIElements" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				771D4F9915D9B78300273C4E /* Debug */,
+				771D4F9A15D9B78300273C4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 771D4F8115D9B78300273C4E /* Project object */;
+}

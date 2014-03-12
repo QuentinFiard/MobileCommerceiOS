@@ -1,0 +1,23 @@
+//
+// Prefix header for all source files of the 'ATGUIElements' target in the 'ATGUIElements' project
+//
+
+#ifdef __OBJC__
+  #import <Foundation/Foundation.h>
+  #import <UIKit/UIKit.h>
+  #import <ATGMobileCommon/UIView+ATGThemeAdditions.h>
+  #import "UIColor+ATGAdditions.h"
+  #import "UIFont+ATGAdditions.h"
+  #import "UITableView+ReloadWithCallBack.h"
+  #import "ATGUIMacros.h"
+#endif
+
+#define IS_IPHONE5 (([[UIScreen mainScreen] bounds].size.height-568)?NO:YES)
+
+#define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+
+#ifdef ATG_DEBUG_MODE
+#define DebugLog( s, ... ) NSLog( @"<%p %@:(%d)> %@", self, [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
+#else
+#define DebugLog( s, ... )
+#endif

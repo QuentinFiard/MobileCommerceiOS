@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>testComponentValue</key>
+	<dict>
+		<key>statusCode</key>
+		<integer>200</integer>
+		<key>response</key>
+		<string>{&quot;cart&quot;: {
+  &quot;appliedPromotions&quot;: [],
+  &quot;commerceItems&quot;: [],
+  &quot;containsGiftWrap&quot;: false,
+  &quot;couponCode&quot;: null,
+  &quot;currencyCode&quot;: &quot;USD&quot;,
+  &quot;discount&quot;: 0,
+  &quot;shipping&quot;: 0,
+  &quot;shippingGroupCount&quot;: 1,
+  &quot;storeCredit&quot;: 0,
+  &quot;subtotal&quot;: 0,
+  &quot;tax&quot;: 0,
+  &quot;total&quot;: 0,
+  &quot;totalCommerceItemCount&quot;: 0
+   }}</string>
+		<key>body</key>
+		<string></string>
+		<key>url</key>
+		<string>http://localhost:7003/rest/bean/atg/commerce/ShoppingCart?pushSite=storeSiteUS&amp;atg-rest-depth=4&amp;atg-rest-property-filter-templates=cartRepriceSubtotal</string>
+	</dict>
+	<key>testComponentValueInvalid</key>
+	<dict>
+		<key>url</key>
+		<string>http://localhost:7003/rest/bean/atg/commerce/ShoppingCart1?pushSite=storeSiteUS&amp;atg-rest-depth=4&amp;atg-rest-property-filter-templates=cartRepriceSubtotal</string>
+		<key>body</key>
+		<string></string>
+		<key>response</key>
+		<string></string>
+		<key>statusCode</key>
+		<integer>404</integer>
+	</dict>
+	<key>testComponentPostValue</key>
+	<dict>
+		<key>statusCode</key>
+		<integer>200</integer>
+		<key>response</key>
+		<string>{&quot;cart&quot;: {
+      &quot;appliedPromotions&quot;: [],
+      &quot;commerceItems&quot;: [],
+      &quot;containsGiftWrap&quot;: false,
+      &quot;couponCode&quot;: null,
+      &quot;currencyCode&quot;: &quot;USD&quot;,
+      &quot;discount&quot;: 0,
+      &quot;shipping&quot;: 0,
+      &quot;shippingGroupCount&quot;: 1,
+      &quot;storeCredit&quot;: 0,
+      &quot;subtotal&quot;: 0,
+      &quot;tax&quot;: 0,
+      &quot;total&quot;: 0,
+      &quot;totalCommerceItemCount&quot;: 0
+      }}</string>
+		<key>body</key>
+		<string>{&quot;atg-rest-depth&quot;:&quot;4&quot;,&quot;atg-rest-property-filter-templates&quot;:&quot;cartRepriceSubtotal&quot;,&quot;atg-rest-view&quot;: true}</string>
+		<key>url</key>
+		<string>http://localhost:7003/rest/bean/atg/commerce/ShoppingCart?pushSite=storeSiteUS</string>
+	</dict>
+	<key>testComponentPostValueInvalid</key>
+	<dict>
+		<key>url</key>
+		<string>http://localhost:7003/rest/bean/atg/commerce/ShoppingCart1?pushSite=storeSiteUS</string>
+		<key>body</key>
+		<string>{&quot;atg-rest-depth&quot;:&quot;4&quot;,&quot;atg-rest-property-filter-templates&quot;:&quot;cartRepriceSubtotal&quot;,&quot;atg-rest-view&quot;: true}</string>
+		<key>response</key>
+		<string></string>
+		<key>statusCode</key>
+		<integer>404</integer>
+	</dict>
+	<key>testServiceRequest</key>
+	<dict>
+		<key>statusCode</key>
+		<integer>200</integer>
+		<key>url</key>
+		<string>http://localhost:7003/rest/service/atg/commerce/catalog/ProductCatalog/product/xprod2050?pushSite=storeSiteUS</string>
+		<key>response</key>
+		<string>{&quot;repositoryId&quot;:&quot;xprod2050&quot;,&quot;displayName&quot;:&quot;Gumdrop Lamp&quot;,&quot;longDescription&quot;:&quot;A creative lighting option that will brighten any room.  Contrasting two-tone colors lend a spirit of fun and creativity to your d?cor.  Perfect for use as an accent or table lamp.&quot;,&quot;productDescription&quot;:&quot;Fun way to illuminate your dorm room or personal space&quot;,&quot;thumbnailImage&quot;:&quot;/crsdocroot/content/images/products/thumb/HOME_GumdropLamp_thumb.jpg&quot;,&quot;fullImage&quot;:&quot;/crsdocroot/content/images/products/full/HOME_GumdropLamp_full.jpg&quot;,&quot;largeImage&quot;:&quot;/crsdocroot/content/images/products/large/HOME_GumdropLamp_large.jpg&quot;,&quot;currencyCode&quot;:&quot;USD&quot;,&quot;highestPrice&quot;:29,&quot;lowestPrice&quot;:29,&quot;childSKUs&quot;:[{&quot;repositoryId&quot;:&quot;xsku2050&quot;,&quot;displayName&quot;:&quot;Gumdrop Lamp&quot;,&quot;thumbnailImage&quot;:&quot;&quot;,&quot;largeImage&quot;:&quot;&quot;,&quot;type&quot;:&quot;sku&quot;,&quot;price&quot;:29}]}</string>
+	</dict>
+	<key>testGetPropertyValue</key>
+	<dict>
+		<key>response</key>
+		<string>{&quot;useShippingAddressAsDefault&quot;:false}</string>
+		<key>url</key>
+		<string>http://localhost:7003/rest/bean/atg/userprofiling/B2CProfileFormHandler/useShippingAddressAsDefault?pushSite=storeSiteUS</string>
+		<key>statusCode</key>
+		<integer>200</integer>
+	</dict>
+	<key>testFormHandler</key>
+	<dict>
+		<key>body</key>
+		<string>{&quot;atg-rest-return-form-handler-exceptions&quot;:true,&quot;_dynSessConf&quot;:&quot;-8491561290276411451&quot;,&quot;atg-rest-return-form-handler-properties&quot;:true,&quot;items[0].catalogRefId&quot;:&quot;xsku2050&quot;,&quot;originOfOrder&quot;:&quot;mobile&quot;,&quot;atg-rest-form-tag-priorities&quot;:&quot;{addItemCount:10}&quot;,&quot;addItemCount&quot;:&quot;1&quot;,&quot;items[0].productId&quot;:&quot;xprod2050&quot;,&quot;items[0].quantity&quot;:&quot;1&quot;,&quot;atg-rest-depth&quot;:&quot;4&quot;,&quot;_dyncharset&quot;:&quot;utf-8&quot;}</string>
+		<key>statusCode</key>
+		<string>200</string>
+		<key>response</key>
+		<string>{
+   &quot;class&quot;: &quot;class atg.rest.processor.BeanProcessor$FormHandlerPropertiesAndExceptions&quot;,
+   &quot;component&quot;: {&quot;cart&quot;: {
+   &quot;appliedPromotions&quot;: [],
+   &quot;commerceItems&quot;: [{
+   &quot;appliedPromotions&quot;: [],
+   &quot;commerceItemId&quot;: &quot;ci9000002&quot;,
+   &quot;listPrice&quot;: 29,
+   &quot;onSale&quot;: false,
+   &quot;price&quot;: 29,
+   &quot;prodId&quot;: &quot;xprod2050&quot;,
+   &quot;qty&quot;: 1,
+   &quot;salePrice&quot;: 0,
+   &quot;sku&quot;: {
+   &quot;displayName&quot;: &quot;Gumdrop Lamp&quot;,
+   &quot;repositoryId&quot;: &quot;xsku2050&quot;
+   },
+   &quot;thumbnailImage&quot;: &quot;/crsdocroot/content/images/products/thumb/HOME_GumdropLamp_thumb.jpg&quot;,
+   &quot;unitPrices&quot;: [{
+   &quot;quantity&quot;: 1,
+   &quot;unitPrice&quot;: 29
+   }]
+   }],
+   &quot;containsGiftWrap&quot;: false,
+   &quot;couponCode&quot;: null,
+   &quot;currencyCode&quot;: &quot;USD&quot;,
+   &quot;discount&quot;: 0,
+   &quot;shipping&quot;: 0,
+   &quot;shippingGroupCount&quot;: 1,
+   &quot;storeCredit&quot;: 0,
+   &quot;subtotal&quot;: 29,
+   &quot;tax&quot;: 0,
+   &quot;total&quot;: 29,
+   &quot;totalCommerceItemCount&quot;: 1
+   }},
+   &quot;result&quot;: true
+   }</string>
+		<key>url</key>
+		<string>http://localhost:7003/rest/bean/atg/store/order/purchase/CartFormHandler/addItemToOrder?pushSite=storeSiteUS</string>
+	</dict>
+	<key>testComponentSSLValue</key>
+	<dict>
+		<key>statusCode</key>
+		<integer>200</integer>
+		<key>response</key>
+		<string>{&quot;cart&quot;: {
+  &quot;appliedPromotions&quot;: [],
+  &quot;commerceItems&quot;: [],
+  &quot;containsGiftWrap&quot;: false,
+  &quot;couponCode&quot;: null,
+  &quot;currencyCode&quot;: &quot;USD&quot;,
+  &quot;discount&quot;: 0,
+  &quot;shipping&quot;: 0,
+  &quot;shippingGroupCount&quot;: 1,
+  &quot;storeCredit&quot;: 0,
+  &quot;subtotal&quot;: 0,
+  &quot;tax&quot;: 0,
+  &quot;total&quot;: 0,
+  &quot;totalCommerceItemCount&quot;: 0
+   }}</string>
+		<key>body</key>
+		<string></string>
+		<key>url</key>
+		<string>https://localhost:7003/rest/bean/atg/commerce/ShoppingCart?pushSite=storeSiteUS&amp;atg-rest-depth=4&amp;atg-rest-property-filter-templates=cartRepriceSubtotal</string>
+	</dict>
+	<key>testGetStateListRequest</key>
+	<dict>
+		<key>statusCode</key>
+		<integer>200</integer>
+		<key>response</key>
+		<string>{&quot;states&quot;:{&quot;AK - Alaska&quot;:&quot;AK&quot;,&quot;AL - Alabama&quot;:&quot;AL&quot;,&quot;AR - Arkansas&quot;:&quot;AR&quot;,&quot;AZ - Arizona&quot;:&quot;AZ&quot;,&quot;CA - California&quot;:&quot;CA&quot;,&quot;CO - Colorado&quot;:&quot;CO&quot;,&quot;CT - Connecticut&quot;:&quot;CT&quot;,&quot;DC - District of Columbia&quot;:&quot;DC&quot;,&quot;DE - Delaware&quot;:&quot;DE&quot;,&quot;FL - Florida&quot;:&quot;FL&quot;,&quot;GA - Georgia&quot;:&quot;GA&quot;,&quot;HI - Hawaii&quot;:&quot;HI&quot;,&quot;IA - Iowa&quot;:&quot;IA&quot;,&quot;ID - Idaho&quot;:&quot;ID&quot;,&quot;IL - Illinois&quot;:&quot;IL&quot;,&quot;IN - Indiana&quot;:&quot;IN&quot;,&quot;KS - Kansas&quot;:&quot;KS&quot;,&quot;KY - Kentucky&quot;:&quot;KY&quot;,&quot;LA - Louisiana&quot;:&quot;LA&quot;,&quot;MA - Massachusetts&quot;:&quot;MA&quot;,&quot;MD - Maryland&quot;:&quot;MD&quot;,&quot;ME - Maine&quot;:&quot;ME&quot;,&quot;MI - Michigan&quot;:&quot;MI&quot;,&quot;MN - Minnesota&quot;:&quot;MN&quot;,&quot;MO - Missouri&quot;:&quot;MO&quot;,&quot;MS - Mississippi&quot;:&quot;MS&quot;,&quot;MT - Montana&quot;:&quot;MT&quot;,&quot;NC - North Carolina&quot;:&quot;NC&quot;,&quot;ND - North Dakota&quot;:&quot;ND&quot;,&quot;NE - Nebraska&quot;:&quot;NE&quot;,&quot;NH - New Hampshire&quot;:&quot;NH&quot;,&quot;NJ - New Jersey&quot;:&quot;NJ&quot;,&quot;NM - New Mexico&quot;:&quot;NM&quot;,&quot;NV - Nevada&quot;:&quot;NV&quot;,&quot;NY - New York&quot;:&quot;NY&quot;,&quot;OH - Ohio&quot;:&quot;OH&quot;,&quot;OK - Oklahoma&quot;:&quot;OK&quot;,&quot;OR - Oregon&quot;:&quot;OR&quot;,&quot;PA - Pennsylvania&quot;:&quot;PA&quot;,&quot;RI - Rhode Island&quot;:&quot;RI&quot;,&quot;SC - South Carolina&quot;:&quot;SC&quot;,&quot;SD - South Dakota&quot;:&quot;SD&quot;,&quot;TN - Tennessee&quot;:&quot;TN&quot;,&quot;TX - Texas&quot;:&quot;TX&quot;,&quot;UT - Utah&quot;:&quot;UT&quot;,&quot;VA - Virginia&quot;:&quot;VA&quot;,&quot;VT - Vermont&quot;:&quot;VT&quot;,&quot;WA - Washington&quot;:&quot;WA&quot;,&quot;WI - Wisconsin&quot;:&quot;WI&quot;,&quot;WV - West Virginia&quot;:&quot;WV&quot;,&quot;WY - Wyoming&quot;:&quot;WY&quot;}}</string>
+		<key>body</key>
+		<string>countryCode=US</string>
+		<key>url</key>
+		<string>http://localhost:7003/rest/service/atg/commerce/util/StateListDroplet?pushSite=storeSiteUS</string>
+	</dict>
+	<key>testFormHandlerError</key>
+	<dict>
+		<key>body</key>
+		<string>{&quot;atg-rest-return-form-handler-exceptions&quot;:true,&quot;_dynSessConf&quot;:&quot;-8491561290276411451&quot;,&quot;atg-rest-return-form-handler-properties&quot;:true,&quot;items[0].catalogRefId&quot;:&quot;xsku2050x&quot;,&quot;originOfOrder&quot;:&quot;mobile&quot;,&quot;atg-rest-form-tag-priorities&quot;:&quot;{addItemCount:10}&quot;,&quot;addItemCount&quot;:&quot;1&quot;,&quot;items[0].productId&quot;:&quot;xprod2050x&quot;,&quot;items[0].quantity&quot;:&quot;1&quot;,&quot;atg-rest-depth&quot;:&quot;4&quot;,&quot;_dyncharset&quot;:&quot;utf-8&quot;}</string>
+		<key>statusCode</key>
+		<string>200</string>
+		<key>response</key>
+		<string>{
+  &quot;class&quot;: &quot;class atg.rest.processor.BeanProcessor$FormHandlerPropertiesAndExceptions&quot;,
+  &quot;component&quot;: {&quot;cart&quot;: {
+    &quot;appliedPromotions&quot;: [],
+    &quot;commerceItems&quot;: [{
+      &quot;appliedPromotions&quot;: [],
+      &quot;commerceItemId&quot;: &quot;ci11000023&quot;,
+      &quot;listPrice&quot;: 0,
+      &quot;onSale&quot;: false,
+      &quot;price&quot;: 0,
+      &quot;prodId&quot;: &quot;xprod2050x&quot;,
+      &quot;qty&quot;: 1,
+      &quot;salePrice&quot;: 0,
+      &quot;sku&quot;: null,
+      &quot;thumbnailImage&quot;: null,
+      &quot;unitPrices&quot;: []
+    }],
+    &quot;containsGiftWrap&quot;: false,
+    &quot;couponCode&quot;: null,
+    &quot;currencyCode&quot;: null,
+    &quot;discount&quot;: 0,
+    &quot;shipping&quot;: 0,
+    &quot;shippingGroupCount&quot;: 1,
+    &quot;storeCredit&quot;: 0,
+    &quot;subtotal&quot;: 0,
+    &quot;tax&quot;: 0,
+    &quot;total&quot;: 0,
+    &quot;totalCommerceItemCount&quot;: 1
+  }},
+  &quot;formExceptions&quot;: [&quot;There was an error while attempting to add the item to the order.&quot;],
+  &quot;result&quot;: false
+}</string>
+		<key>url</key>
+		<string>http://localhost:7003/rest/bean/atg/store/order/purchase/CartFormHandler/addItemToOrder?pushSite=storeSiteUS</string>
+	</dict>
+</dict>
+</plist>

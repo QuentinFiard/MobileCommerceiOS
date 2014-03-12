@@ -1,0 +1,42 @@
+//
+// Prefix header for all source files of the 'MobileCommerce' target in the 'MobileCommerce' project
+//
+
+#ifdef __OBJC__
+  #import <UIKit/UIKit.h>
+  #import <Foundation/Foundation.h>
+  #import <CoreData/CoreData.h>
+  #import <ATGMobileCommon/NSObject+ATGAdditions.h>
+  #import <ATGMobileClient/NSString+ATGAdditions.h>
+  #import <ATGMobileClient/UITableViewCell+ATGAdditions.h>
+  #import <ATGMobileClient/UIViewController+ATGAdditions.h>
+  #import "UIView+ATGAdditions.h"
+  #import <ATGMobileClient/CATransition+ATGAdditions.h>
+  #import <ATGMobileClient/ATGUIMacros.h>
+  #import "UINavigationController+ATGAdditionalMethods.h"
+  #import <ATGUIElements/UIView+Layout.h>
+  #import <ATGUIElements/UIColor+ATGAdditions.h>
+  #import <ATGUIElements/UIFont+ATGAdditions.h>
+  #import "NSAttributedString+ATGAdditions.h"
+  #import <ATGMobileCommon/UIView+ATGThemeAdditions.h>
+  #import <iOS-rest-client/NSString+ATGRestAdditions.h>
+  #import <iOS-rest-client/ATGRestConstants.h>
+  #import <ATGMobileCommon/ATGThemeManager.h>
+#endif
+
+#define IS_IPHONE5 (([[UIScreen mainScreen] bounds].size.height-568)?NO:YES)
+
+#define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+#define SYSTEM_VERSION_EQUAL_TO(v)                  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)
+#define SYSTEM_VERSION_GREATER_THAN(v)              ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedDescending)
+#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN(v)                 ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v)     ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending)
+
+#define DEVICE_ORIENTATION [[UIApplication sharedApplication] statusBarOrientation]
+
+#ifdef ATG_DEBUG_MODE
+#define DebugLog( s, ... ) NSLog( @"<%p %@:(%d)> %@", self, [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
+#else
+#define DebugLog( s, ... ) 
+#endif
