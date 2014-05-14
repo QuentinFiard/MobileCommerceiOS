@@ -37,31 +37,32 @@
  </ORACLECOPYRIGHT>*/
 
 /*!
- 
+
  @header
  @abstract ATGJSONPathManager class used to process a tokenized JSON path.
  @copyright Copyright (C) 1994-2013 Oracle and/or its affiliates. All rights reserved.
- 
+
  */
 
 #ifndef JSONPath_ATGJSONPathManager_h
 #define JSONPath_ATGJSONPathManager_h
 
+#import <Foundation/Foundation.h>
 #import "ATGJSONPathTokenizer.h"
 #import "ATGJSONPathParser.h"
 
 @class ATGJSONPathParser;
 
 /*!
- 
+
  @class
  @abstract ATGJSONPathManager is used to fetch pieces of content from a JSON object, that is serialized into an @link NSDictionary /@link, given a JSON path.
- @discussion A manager that processes a JSON path and fetches content from the given JSON dictionary by invoking appropriate methods in @link ATGJSONPathParser /@link. 
+ @discussion A manager that processes a JSON path and fetches content from the given JSON dictionary by invoking appropriate methods in @link ATGJSONPathParser /@link.
  Users of this manager simply need to pass to it a valid JSON path and a valid @link NSDictionary /@link containing the serialized JSON without any knowledge of the lower level implementation of the parser.
  <b>Note:</b> This manager assumes that the given JSON path and JSON dicitionary are valid objects and <b> does not </b> perform any validations or error checks.
  A JSON path is a @link NSString /@link object describing the path to follow in the given JSON dictionary to obtain the desired content.
  The result set is one of two types: @link NSArray /@link or @link NSDictionary /@link, both of which may be empty if no satisfying content is found in the JSON.
- 
+
  */
 
 

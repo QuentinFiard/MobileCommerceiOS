@@ -37,15 +37,17 @@
  </ORACLECOPYRIGHT>*/
 
 /*!
- 
+
  @header
  @abstract ATGJSONPathTokenizer class used to tokenize a JSON path.
  @copyright Copyright (C) 1994-2013 Oracle and/or its affiliates. All rights reserved.
- 
+
  */
 
 #ifndef JSONPath_ATGJSONPathTokenizer_h
 #define JSONPath_ATGJSONPathTokenizer_h
+
+#import <Foundation/Foundation.h>
 
 @interface ATGJSONPathTokenizer : NSObject
 

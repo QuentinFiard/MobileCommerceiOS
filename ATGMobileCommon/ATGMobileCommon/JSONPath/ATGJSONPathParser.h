@@ -37,29 +37,30 @@
  </ORACLECOPYRIGHT>*/
 
 /*!
- 
+
  @header
  @abstract ATGJSONPathParser class used to fetch pieces of content from a JSON dicitioary based on a JSON path.
  @copyright Copyright (C) 1994-2013 Oracle and/or its affiliates. All rights reserved.
- 
+
  */
 
 #ifndef JSONPath_ATGJSONPathParser_h
 #define JSONPath_ATGJSONPathParser_h
 
+#import <Foundation/Foundation.h>
 #import "ATGJSONPathParserDelegate.h"
 #import "ATGJSONPathManager.h"
 
 @class ATGJSONPathManager;
 
 /*!
- 
+
  @class
  @abstract ATGJSONPathParser is used to fetch pieces of content from a JSON object that is serialized into an @link NSDictionary /@link, given a path token.
  @discussion A parser that processes a JSON to fetch contents that satisfy the given path token.
     JSON path tokens are @link NSString /@link objects indicating the descendants to inspect and filters to apply to the content. A @link ATGJSONPathManager /@link must be used to tokenize and process the JSON path, and determine which @link ATGJSONPathParser /@link method must be invoked to fetch matching content.
     The result set is one of two types: @link NSArray /@link or @link NSDictionary /@link, both of which may be empty if no satisfying content is found in the JSON.
- 
+
  */
 
 typedef enum classTypes {
@@ -111,7 +112,7 @@ typedef enum classTypes {
 
 /*!
  @method
- @abstract method to fetch the immediate child of the content with key nodename  
+ @abstract method to fetch the immediate child of the content with key nodename
  @param contentJSON an @link NSDictionary /@link containing the desired content
  @param nodename a @link NSString /@link token containing the name of the child to fetch contents of
  @return a @link NSArray /@link containing the content items whose key in contentJSON is nodename
@@ -132,7 +133,7 @@ typedef enum classTypes {
 
 /*!
  @method
- @abstract method to fetch content item at a given index; path has the following general format: ${.node1}*.node2[index] 
+ @abstract method to fetch content item at a given index; path has the following general format: ${.node1}*.node2[index]
  @param contentJSON an @link NSDictionary /@link containing the desired content
  @param index the location of the content item to fetch in the given content
  @return the content item at the given index;
@@ -179,7 +180,7 @@ typedef enum classTypes {
  @param contentJSON an @link NSDictionary /@link containing the desired content
  @param unionExpression the expression token in the JSON path indicating the items to be unionized. Token is generally of the format [a,b,c,...] where a, b, c may be any combination of array indices, alternative names, script filters, expression filters; items within the square brackets must be comma separated.
  @param manager an instance of @link ATGJSONPathManager /@link that initiated the JSON path processing and owns the current instance of the @link ATGJSONPathParser /@link
- @return all items in contentJSON satisfying the contents of unionExpression. 
+ @return all items in contentJSON satisfying the contents of unionExpression.
     <b>Note:</b> If an item in contentJSON satisfies more than one of the items in unionExpression, then the result set will have a copy of that item for each sub-expression in unionExpression that it satisfies.
  */
 - (id) getContentFromCurrent:(id) contentJSON withUnionOf:(NSString *) unionExpression pathManager:(ATGJSONPathManager *)manager;

@@ -37,16 +37,18 @@
  </ORACLECOPYRIGHT>*/
 
 /*!
- 
+
  @header
- @abstract ATGDefaultJSONPathRegex class is a singleton class used to obtain regular expressions to determine the type of filter 
+ @abstract ATGDefaultJSONPathRegex class is a singleton class used to obtain regular expressions to determine the type of filter
  being requested in a given token of a JSON path.
  @copyright Copyright (C) 1994-2013 Oracle and/or its affiliates. All rights reserved.
- 
+
  */
 
 #ifndef JSONPath_ATGDefaultJSONPathRegex_h
 #define JSONPath_ATGDefaultJSONPathRegex_h
+
+#import <Foundation/Foundation.h>
 
 @interface ATGDefaultJSONPathRegex : NSObject
 
